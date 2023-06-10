@@ -7,9 +7,16 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "check": "prettier --check '{public,src}/**/*.{scss,html,js,astro,svelte,md,json}'",
+    "format": "prettier --write '{public,src}/**/*.{scss,html,js,astro,svelte,md,json}'"
   },
   "dependencies": {
-    "astro": "^2.5.6"
+    "astro": "^2.5.6",
+    "sass": "^1.63.3"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8",
+    "prettier-plugin-astro": "^0.10.0"
   }
 }

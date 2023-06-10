@@ -1,0 +1,26 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../layouts/Base.astro";
+
+const metadata = {
+  title: "Resources",
+  description: "tbd",
+  url: "/resources",
+  image: "/",
+};
+
+const resourcePages = await getCollection("resources");
+---
+
+<Base {metadata}>
+  <h1>Resources</h1>
+  <ul>
+    {
+      resourcePages.map((p) => (
+        <li>
+          <a href={p.slug}>{p.data.title}</a>
+        </li>
+      ))
+    }
+  </ul>
+</Base>

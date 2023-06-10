@@ -1,0 +1,20 @@
+---
+import Metadata from "../components/layouts/Metadata.astro";
+import "../styles/index.scss";
+
+const { metadata } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <Metadata
+      title={metadata.title}
+      description={metadata.description}
+      url={metadata.url}
+      image={metadata.image}
+    />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

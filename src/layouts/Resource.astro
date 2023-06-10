@@ -1,0 +1,16 @@
+---
+import Base from "../layouts/Base.astro";
+
+const { frontmatter } = Astro.props;
+const metadata = {
+  title: frontmatter.title,
+  description: "coming soon",
+  url: "",
+  image: "/",
+};
+---
+
+<Base {metadata}>
+  <!-- TODO: add resources nav -->
+  <slot />
+</Base>
