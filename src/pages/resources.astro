@@ -1,6 +1,9 @@
 ---
 import { getCollection } from "astro:content";
+import { Navbar } from "../components/resources";
+import { TopicCard } from "../components/core";
 import Base from "../layouts/Base.astro";
+import "./resources.style.scss";
 
 const metadata = {
   title: "Resources",
@@ -13,7 +16,53 @@ const resourcePages = await getCollection("resources");
 ---
 
 <Base {metadata}>
-  <h1>Resources</h1>
+  <Navbar />
+  <div style="margin-top:5rem"></div>
+  <div class="resources-page__heading">
+    <h1 class="resource-page__heading-title">Resources</h1>
+    <p class="resources-page__heading-subtitle">
+      Resources created by students for students.
+    </p>
+    <input type="text" placeholder="Search" />
+  </div>
+  <div class="resources-page__cards">
+    <TopicCard
+      title={"Introduction"}
+      description={"Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."}
+    />
+    <TopicCard
+      title={"Placeholder"}
+      description={"Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."}
+    />
+    <TopicCard
+      title={"More Placeholder"}
+      description={"Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."}
+    />
+    <TopicCard
+      title={"Placeholder"}
+      description={"Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."}
+    />
+    <TopicCard
+      title={"Placeholder"}
+      description={"Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."}
+    />
+    <TopicCard
+      title={"Placeholder"}
+      description={"Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."}
+    />
+    <TopicCard
+      title={"Placeholder"}
+      description={"Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."}
+    />
+    <TopicCard
+      title={"Placeholder"}
+      description={"Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."}
+    />
+    <TopicCard
+      title={"Placeholder"}
+      description={"Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."}
+    />
+  </div>
   <ul>
     {
       resourcePages.map((p) => (

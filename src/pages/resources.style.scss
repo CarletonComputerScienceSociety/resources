@@ -1,0 +1,22 @@
+.resources-page {
+  &__heading {
+    width: 100vw;
+    height: 15rem;
+    background-color: #f92f39;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__cards {
+    margin: auto;
+    margin-top: 4rem;
+    width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
+}

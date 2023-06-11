@@ -1,0 +1,32 @@
+.resources-sidebar {
+  &__body {
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+    min-height: 90vh;
+    width: 17rem;
+    position: fixed;
+    bottom: 0;
+    z-index: 900;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 2rem;
+  }
+
+  &__item {
+    margin-bottom: 1rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: bold;
+    &:hover {
+      color: var(--color-text-red);
+    }
+  }
+}

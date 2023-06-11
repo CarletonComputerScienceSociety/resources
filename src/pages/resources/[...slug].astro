@@ -1,6 +1,5 @@
 ---
 import { getCollection } from "astro:content";
-import ResourceLayout from "../../layouts/Resource.astro";
 
 export async function getStaticPaths() {
   const resourcePages = await getCollection("resources");
@@ -14,6 +13,4 @@ const { page } = Astro.props;
 const { Content } = await page.render();
 ---
 
-<ResourceLayout frontmatter={page.data}>
-  <Content />
-</ResourceLayout>
+<Content />

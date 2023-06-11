@@ -1,0 +1,13 @@
+.resources-layout__container {
+  display: flex;
+  min-height: 100%;
+}
+
+.resources-layout__content {
+  flex: 1;
+  padding: 1rem;
+  flex-direction: column;
+  margin-left: 22rem;
+  margin-top: 7rem;
+  margin-right: 7rem;
+}

@@ -1,5 +1,6 @@
 ---
 import Metadata from "../components/layouts/Metadata.astro";
+import { Footer } from "../components/core";
 import "../styles/index.scss";
 
 const { metadata } = Astro.props;
@@ -16,5 +17,6 @@ const { metadata } = Astro.props;
   </head>
   <body>
     <slot />
+    <Footer />
   </body>
 </html>

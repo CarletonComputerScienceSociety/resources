@@ -1,0 +1,12 @@
+---
+import "./TopicCard.style.scss";
+
+const { title, description } = Astro.props;
+---
+
+<div class="topic-card">
+  <div class="topic-card__content">
+    <h3 class="topic-card__title">{title}</h3>
+    <p class="topic-card__description">{description}</p>
+  </div>
+</div>

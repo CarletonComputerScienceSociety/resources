@@ -12,6 +12,6 @@ const resourcesCollection = defineCollection({
 });
 
 export const collections = {
-   'events': eventsCollection,
+  'events': eventsCollection,
   'resources': resourcesCollection,
 };
