@@ -1,12 +1,19 @@
 ---
+import { Icon } from "astro-icon";
 import "./TopicCard.style.scss";
 
-const { title, description } = Astro.props;
+const { title, description, icon } = Astro.props;
 ---
 
 <div class="topic-card">
   <div class="topic-card__content">
-    <h3 class="topic-card__title">{title}</h3>
+    <div class="topic-card__heading">
+      <div class="topic-card__icon">
+        <Icon name={icon} />
+      </div>
+      <h3 class="topic-card__title">{title}</h3>
+    </div>
+
     <p class="topic-card__description">{description}</p>
   </div>
 </div>
