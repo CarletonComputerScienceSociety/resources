@@ -4,6 +4,7 @@ import { Navbar } from "../components/resources";
 import { TopicCard } from "../components/core";
 import { Icon } from "astro-icon";
 import Base from "../layouts/Base.astro";
+import SearchBar from "../components/search/SearchBar.astro";
 import "./resources.style.scss";
 
 const metadata = {
@@ -14,6 +15,8 @@ const metadata = {
 };
 
 const resourcePages = await getCollection("resources");
+const allPosts = await Astro.glob('../content/resources/*.{md,mdx}');
+const posts = allPosts.filter((post) => !post.frontmatter.draft && post.frontmatter.slug);
 ---
 
 <Base {metadata}>
@@ -24,7 +27,7 @@ const resourcePages = await getCollection("resources");
     <p class="resources-page__heading-subtitle">
       Resources created by students for students.
     </p>
-    <input type="text" placeholder="Search" />
+    <SearchBar searchList={posts} />
   </div>
   <div class="resources-page__cards">
     <TopicCard
