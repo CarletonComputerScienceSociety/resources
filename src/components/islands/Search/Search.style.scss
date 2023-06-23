@@ -1,0 +1,26 @@
+.search-bar {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  padding-right: 1rem;
+  width: 25rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+
+  i {
+    color: rgb(160, 160, 160);
+  }
+
+  i:hover {
+    color: rgb(255, 72, 72);
+  }
+
+  input {
+    border: none;
+  }
+
+  input:focus {
+    outline: none;
+  }
+}

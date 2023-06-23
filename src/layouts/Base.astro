@@ -14,6 +14,11 @@ const { metadata } = Astro.props;
       url={metadata.url}
       image={metadata.image}
     />
+    <!-- HACK: added font-awesome CDN so islands can use icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <slot />

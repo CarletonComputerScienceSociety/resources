@@ -18,9 +18,10 @@ const resourcePages = await getCollection("resources");
 
 <Base {metadata}>
   <Navbar />
+  <!-- TODO: remove this demo margin -->
   <div style="margin-top:5rem"></div>
   <div class="resources-page__heading">
-    <h1 class="resource-page__heading-title">Resources</h1>
+    <p class="resources-page__heading-title">Resources</p>
     <p class="resources-page__heading-subtitle">
       Resources created by students for students.
     </p>
@@ -58,13 +59,6 @@ const resourcePages = await getCollection("resources");
       icon={"mdi:lightbulb"}
     />
   </div>
-  <ul>
-    {
-      resourcePages.map((p) => (
-        <li>
-          <a href={p.slug}>{p.data.title}</a>
-        </li>
-      ))
-    }
-  </ul>
+  <!-- TODO: remove this demo margin -->
+  <div style="margin-top:3rem"></div>
 </Base>

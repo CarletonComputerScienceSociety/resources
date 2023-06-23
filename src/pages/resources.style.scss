@@ -10,6 +10,12 @@
     flex-direction: column;
   }
 
+  &__heading-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
   &__cards {
     margin: auto;
     margin-top: 4rem;

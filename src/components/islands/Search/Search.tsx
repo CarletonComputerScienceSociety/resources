@@ -2,6 +2,7 @@ import Fuse from "fuse.js";
 import { ChangeEvent, useState } from "react";
 import type { SearchProps, SearchResult } from "./Search.model";
 import React from "react";
+import "./Search.style.scss";
 
 function Search(props: SearchProps) {
   const POST_LIMIT = 5;
@@ -28,12 +29,16 @@ function Search(props: SearchProps) {
 
   return (
     <>
-      <input
-        type="text"
-        value={query}
-        onChange={handleOnSearch}
-        placeholder="Search"
-      />
+      <div className="search-bar">
+        <input
+          type="text"
+          value={query}
+          onChange={handleOnSearch}
+          placeholder="Search"
+          className="search"
+        />
+        <i className="fa fa-search"></i>
+      </div>
       {query.length > 1 ? (
         <>
           {posts && posts.length > 0 ? (
