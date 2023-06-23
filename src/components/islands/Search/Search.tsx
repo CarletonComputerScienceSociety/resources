@@ -1,6 +1,7 @@
 import Fuse from "fuse.js";
 import { ChangeEvent, useState } from "react";
 import type { SearchProps, SearchResult } from "./Search.model";
+import React from "react";
 
 function Search(props: SearchProps) {
   const POST_LIMIT = 5;
