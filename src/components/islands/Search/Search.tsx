@@ -1,7 +1,8 @@
 import Fuse from "fuse.js";
-import { useState } from "react";
+import { ChangeEvent, useState } from "react";
+import type { SearchProps, SearchResult } from "./Search.model";
 
-function Search({ searchList }) {
+function Search(props: SearchProps) {
   const POST_LIMIT = 5;
 
   const OPTIONS = {
@@ -13,16 +14,15 @@ function Search({ searchList }) {
 
   const [query, setQuery] = useState("");
 
-  const fuse = new Fuse(searchList, OPTIONS);
+  const fuse = new Fuse(props.searchList, OPTIONS);
 
   const posts = fuse
-    .search(query)
+    .search<SearchResult>(query)
     .map((result) => result.item)
     .slice(0, POST_LIMIT);
 
-  const handleOnSearch = ({ target = {} }) => {
-    const { value } = target;
-    setQuery(value);
+  const handleOnSearch = (e: ChangeEvent<HTMLInputElement>) => {
+    setQuery(e.target.value);
   };
 
   return (
