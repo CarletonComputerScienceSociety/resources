@@ -1,5 +1,7 @@
 ---
+import { Search } from "../../islands";
 import "./Navbar.style.scss";
+const { searchList } = Astro.props;
 ---
 
 <div class="resources-navbar">
@@ -9,21 +11,12 @@ import "./Navbar.style.scss";
         <img src="/images/ccss-logo-2022.png" alt="logo" />
       </a>
     </div>
-    <div class="resources-navbar__menu">
-      <!-- TODO: render nav elements from content data -->
-      <!-- <ul>
-        <li>
-          <a href="/about">About</a>
-        </li>
-        <li>
-          <a href="/events">Events</a>
-        </li>
-        <li>
-          <a href="/resources">Resources</a>
-        </li>
-      </ul> -->
+    <div class="resources-navbar__center">
+      <div class="resources-navbar__menu">
+        <Search client:load searchList={searchList} />
+      </div>
     </div>
-    <div class="resources-navbar__search">
+    <div class="resources-navbar__right">
       <!-- TODO: add search -->
       <!--<input type="text" placeholder="Search" />-->
     </div>

@@ -2,7 +2,7 @@
   position: fixed;
   width: 260px;
   flex-shrink: 0;
-  background-color: rgb(255, 255, 255);
+  background-color: #fafafa;
   height: 100vh;
   overflow: auto;
   color: #000000;
@@ -10,13 +10,6 @@
   font-size: 1rem;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
   padding-right: 0rem;
-
-  &__logo {
-    img {
-      padding: 1rem;
-      width: 14rem;
-    }
-  }
 }
 
 .sidebar-item {

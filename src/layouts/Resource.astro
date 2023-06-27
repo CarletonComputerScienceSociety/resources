@@ -2,6 +2,7 @@
 import Base from "../layouts/Base.astro";
 import { Navbar, Sidebar } from "../components/resources";
 import "./Resource.style.scss";
+import { getCollection } from "astro:content";
 
 const { frontmatter } = Astro.props;
 const metadata = {
@@ -10,9 +11,12 @@ const metadata = {
   url: "",
   image: "/",
 };
+
+const resourcePages = await getCollection("resources");
 ---
 
 <Base {metadata}>
+  <Navbar searchList={resourcePages} />
   <div class="resources-layout__container">
     <Sidebar client:load />
     <div class="resources-layout__content">

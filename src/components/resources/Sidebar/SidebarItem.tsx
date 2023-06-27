@@ -18,6 +18,8 @@ export default function SidebarItem(props: SidebarItemProps) {
         </button>
       </div>
       <div className="sidebar-content">
+        {/* TODO: don't hardcode this */}
+        <div style={{ marginBottom: "0.5rem" }}></div>
         {props.item.children.map((child, index) => (
           <SidebarItem key={index} item={child} />
         ))}

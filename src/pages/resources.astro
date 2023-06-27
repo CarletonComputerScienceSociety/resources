@@ -1,6 +1,5 @@
 ---
 import { getCollection } from "astro:content";
-import { Navbar } from "../components/resources";
 import { TopicCard } from "../components/core";
 import { Search } from "../components/islands";
 import Base from "../layouts/Base.astro";
@@ -17,9 +16,6 @@ const resourcePages = await getCollection("resources");
 ---
 
 <Base {metadata}>
-  <Navbar />
-  <!-- TODO: remove this demo margin -->
-  <div style="margin-top:5rem"></div>
   <div class="resources-page__heading">
     <p class="resources-page__heading-title">Resources</p>
     <p class="resources-page__heading-subtitle">
