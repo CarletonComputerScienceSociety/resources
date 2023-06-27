@@ -27,37 +27,39 @@ const resourcePages = await getCollection("resources");
     </p>
     <Search client:load searchList={resourcePages} />
   </div>
-  <div class="resources-page__cards">
-    <TopicCard
-      title={"Student Experience"}
-      description={"Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."}
-      icon={"mdi:home"}
-    />
-    <TopicCard
-      title={"Academics"}
-      description={"Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."}
-      icon={"mdi:school"}
-    />
-    <TopicCard
-      title={"Courses"}
-      description={"Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."}
-      icon={"mdi:calendar"}
-    />
-    <TopicCard
-      title={"Self-Learning"}
-      description={"Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."}
-      icon={"mdi:book-open-page-variant"}
-    />
-    <TopicCard
-      title={"Careers"}
-      description={"Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."}
-      icon={"mdi:briefcase"}
-    />
-    <TopicCard
-      title={"FAQs"}
-      description={"Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."}
-      icon={"mdi:lightbulb"}
-    />
+  <div class="resources-page__container">
+    <div class="resources-page__cards">
+      <TopicCard
+        title={"Student Experience"}
+        description={"Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."}
+        icon={"mdi:home"}
+      />
+      <TopicCard
+        title={"Academics"}
+        description={"Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."}
+        icon={"mdi:school"}
+      />
+      <TopicCard
+        title={"Courses"}
+        description={"Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."}
+        icon={"mdi:calendar"}
+      />
+      <TopicCard
+        title={"Self-Learning"}
+        description={"Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."}
+        icon={"mdi:book-open-page-variant"}
+      />
+      <TopicCard
+        title={"Careers"}
+        description={"Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."}
+        icon={"mdi:briefcase"}
+      />
+      <TopicCard
+        title={"FAQs"}
+        description={"Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."}
+        icon={"mdi:lightbulb"}
+      />
+    </div>
   </div>
   <!-- TODO: remove this demo margin -->
   <div style="margin-top:3rem"></div>

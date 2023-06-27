@@ -16,6 +16,11 @@
     margin: 0;
   }
 
+  &__container {
+    display: flex;
+    height: 60vh;
+  }
+
   &__cards {
     margin: auto;
     margin-top: 4rem;

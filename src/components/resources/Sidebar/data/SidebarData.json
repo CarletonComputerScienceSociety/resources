@@ -1,0 +1,126 @@
+[
+  {
+    "title": "General",
+    "icon": "mdi:home",
+    "children": [
+      {
+        "title": "Home",
+        "icon": "mdi:home",
+        "path": "/"
+      },
+      {
+        "title": "About",
+        "icon": "mdi:home",
+        "path": "/about"
+      },
+      {
+        "title": "Contact",
+        "icon": "mdi:home",
+        "children": [
+          {
+            "title": "Facebook",
+            "icon": "mdi:home"
+          },
+          {
+            "title": "Twitter",
+            "icon": "mdi:home"
+          },
+          {
+            "title": "Instagram",
+            "icon": "mdi:home"
+          }
+        ]
+      },
+      {
+        "title": "FAQ",
+        "icon": "mdi:home"
+      }
+    ]
+  },
+  {
+    "title": "Account",
+    "icon": "mdi:home",
+    "children": [
+      {
+        "title": "Login",
+        "path": "/login"
+      },
+      {
+        "title": "Register",
+        "path": "/register"
+      },
+      {
+        "title": "Forgot Password",
+        "path": "/forgot-password"
+      },
+      {
+        "title": "Reset Password",
+        "path": "/reset-password"
+      }
+    ]
+  },
+  {
+    "title": "Profile",
+    "icon": "mdi:home",
+    "children": [
+      {
+        "title": "Profile",
+        "path": "/profile"
+      },
+      {
+        "title": "Settings",
+        "children": [
+          {
+            "title": "Account",
+            "path": "/settings/account"
+          },
+          {
+            "title": "Billing",
+            "children": [
+              {
+                "title": "Payment",
+                "path": "/settings/billing/payment"
+              },
+              {
+                "title": "Subscription",
+                "path": "/settings/billing/subscription"
+              }
+            ]
+          },
+          {
+            "title": "Notifications",
+            "path": "/settings/notifications"
+          }
+        ]
+      },
+      {
+        "title": "Logout",
+        "path": "/logout"
+      }
+    ]
+  },
+  {
+    "title": "Advance",
+    "icon": "mdi:home",
+    "children": [
+      {
+        "title": "Search",
+        "path": "/search"
+      },
+      {
+        "title": "History",
+        "path": "/history"
+      }
+    ]
+  },
+  {
+    "title": "Support",
+    "icon": "mdi:home",
+    "path": "/support"
+  },
+  {
+    "title": "Report Bug",
+    "icon": "mdi:home",
+    "path": "/report-bug"
+  }
+]
