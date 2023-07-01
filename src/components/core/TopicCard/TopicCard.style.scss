@@ -1,8 +1,5 @@
 .topic-card {
   background-color: white;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-  border-radius: 0.625rem;
   margin-bottom: 1rem;
   width: 20rem;
 
@@ -23,8 +20,6 @@
     width: 2rem;
     height: 2rem;
     margin-right: 1rem;
-    background-color: #ffdddd;
-    color: rgb(255, 72, 72);
     border-radius: 2rem;
     padding: 0.8rem;
   }
@@ -43,6 +38,45 @@
 
   &:hover {
     cursor: pointer;
-    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2);
   }
+}
+
+.red-card {
+  background-color: #ffdddd;
+  color: rgb(255, 72, 72);
+}
+
+.yellow-card {
+  background-color: #fffddd;
+  color: #fdc11a;
+}
+
+.blue-card {
+  background-color: #ddddff;
+  color: #4b56bf;
+}
+
+.cyan-card {
+  background-color: #ddfcff;
+  color: #2dc0ff;
+}
+
+.green-card {
+  background-color: #ddffdd;
+  color: #2ddc2d;
+}
+
+.black-card {
+  background-color: #dddddd;
+  color: #4b4b4b;
+}
+
+.orange-card {
+  background-color: #ffddcc;
+  color: #ff8c00;
+}
+
+.purple-card {
+  background-color: #f5ddff;
+  color: #a64dff;
 }

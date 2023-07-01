@@ -1,0 +1,43 @@
+---
+import { getCollection } from "astro:content";
+import { Search } from "./Search";
+import "./Header.style.scss";
+const resourcePages = await getCollection("resources");
+---
+
+<div class="header">
+  <div class="header__container">
+    <div class="header__left">
+      <div class="header__content">
+        <div class="header__title">By Students</div>
+        <div class="header__subtitle">For Students.</div>
+        <p>
+          Student created resources, guides, and more to help you succeed in
+          your journey as a Carleton University computer science student.
+        </p>
+        <div class="header__search">
+          <Search client:only searchList={resourcePages} />
+        </div>
+      </div>
+    </div>
+    <div class="header__right">
+      <div class="header__animation">
+        <lottie-player
+          src="/lottie/image.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay></lottie-player>
+      </div>
+      <!-- <div class="header__students">
+        <div class="header__students__container__left">
+          <div class="header__students__circle circle-one"></div>
+          <div class="header__students__circle circle-two"></div>
+        </div>
+        <div class="header__students__container__right">
+          <div class="header__students__circle circle-three"></div>
+          <div class="header__students__circle circle-four"></div>
+        </div> -->
+    </div>
+  </div>
+</div>

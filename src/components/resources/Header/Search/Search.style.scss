@@ -1,13 +1,13 @@
-.search-bar {
+.header-search-bar {
   background-color: white;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   padding: 0.5rem;
   padding-right: 1rem;
   width: 25rem;
   display: flex;
   justify-content: space-between;
-  font-size: 1.2rem;
-  border: 1px solid rgb(235, 235, 235);
+  font-size: 1.1rem;
+  border: 1px solid rgb(205, 205, 205);
 
   i {
     color: rgb(160, 160, 160);
@@ -19,6 +19,12 @@
 
   input {
     border: none;
+    font-size: 1.1rem;
+    width: 100%;
+  }
+
+  input::placeholder {
+    opacity: 0.5;
   }
 
   input:focus {
@@ -26,7 +32,7 @@
   }
 }
 
-.search-results {
+.header-search-results {
   position: fixed;
 
   ul {

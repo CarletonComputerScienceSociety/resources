@@ -29,18 +29,18 @@ function Search(props: SearchProps) {
 
   return (
     <>
-      <div className="search-bar">
+      <div className="header-search-bar">
         <input
           type="text"
           value={query}
           onChange={handleOnSearch}
-          placeholder="Search"
+          placeholder="Search..."
           className="search"
         />
         <i className="fa fa-search"></i>
       </div>
       {query.length > 1 ? (
-        <div className="search-results">
+        <div className="header-search-results">
           {posts && posts.length > 0 ? (
             <ul>
               {posts.map((post) => (

@@ -1,7 +1,7 @@
 [
   {
-    "title": "General",
-    "icon": "mdi:home",
+    "title": "Student Life",
+    "icon": "fa fa-home",
     "children": [
       {
         "title": "Home",
@@ -38,7 +38,7 @@
     ]
   },
   {
-    "title": "Account",
+    "title": "Academics",
     "icon": "mdi:home",
     "children": [
       {
@@ -60,7 +60,7 @@
     ]
   },
   {
-    "title": "Profile",
+    "title": "Careers",
     "icon": "mdi:home",
     "children": [
       {
@@ -100,7 +100,7 @@
     ]
   },
   {
-    "title": "Advance",
+    "title": "Self Learning",
     "icon": "mdi:home",
     "children": [
       {
@@ -114,12 +114,12 @@
     ]
   },
   {
-    "title": "Support",
+    "title": "Report Issue",
     "icon": "mdi:home",
     "path": "/support"
   },
   {
-    "title": "Report Bug",
+    "title": "Contribute",
     "icon": "mdi:home",
     "path": "/report-bug"
   }

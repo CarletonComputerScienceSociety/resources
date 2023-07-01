@@ -11,13 +11,11 @@ const { searchList } = Astro.props;
         <img src="/images/ccss-logo-2022.png" alt="logo" />
       </a>
     </div>
-    <div class="resources-navbar__center">
+    <div class="resources-navbar__center"></div>
+    <div class="resources-navbar__right">
       <div class="resources-navbar__menu">
         <Search client:load searchList={searchList} />
       </div>
-    </div>
-    <div class="resources-navbar__right">
-      <!-- TODO: add search -->
       <!--<input type="text" placeholder="Search" />-->
     </div>
   </div>

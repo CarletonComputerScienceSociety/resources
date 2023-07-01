@@ -1,0 +1,117 @@
+.header {
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  &__container {
+    width: 75rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__search {
+    margin-top: 2rem;
+  }
+
+  &__animation {
+    width: 32rem;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 4.2rem;
+  }
+
+  &__subtitle {
+    font-size: 4.2rem;
+    font-weight: bold;
+  }
+
+  &__content {
+    width: 40rem;
+    height: 100%;
+
+    p {
+      font-size: 1.4rem;
+      color: gray;
+    }
+  }
+
+  &__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34rem;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+.header__students {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  &__container__left {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+  }
+
+  &__container__right {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  &__circle {
+    border-radius: 10rem;
+    margin: 1rem;
+  }
+}
+
+.circle-one {
+  height: 15rem;
+  width: 15rem;
+  background-color: #4b56bf;
+}
+
+.circle-two {
+  height: 12rem;
+  width: 12rem;
+  background-color: #fdc11a;
+}
+
+.circle-three {
+  height: 9.5rem;
+  width: 9.5rem;
+  background-color: #a8dff6;
+}
+
+.circle-four {
+  height: 20rem;
+  width: 20rem;
+  background-color: #ec4344;
+}
