@@ -3,6 +3,33 @@
     display: flex;
   }
 
+  &__navbar {
+    width: 75rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    img {
+      width: 2.8rem;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-left: 0.8rem;
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+
   &__cards {
     margin: auto;
     // margin-top: 4rem;

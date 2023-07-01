@@ -18,10 +18,22 @@ const resourcePages = await getCollection("resources");
 
 <Base {metadata}>
   <!-- TODO: remove this demo margin -->
-  <div style="margin-top:4rem"></div>
+  <div style="margin-top:1.5rem"></div>
+  <div class="resources-page__navbar">
+    <div class="resources-page__logo">
+      <img src="./images/ccss-logo.png" alt="logo" />
+      <div class="resources-page__logo-text">Resources</div>
+    </div>
+    <div class="resources-page__items">
+      <div>About</div>
+      <div>Contribute</div>
+    </div>
+  </div>
+  <!-- TODO: remove this demo margin -->
+  <div style="margin-top:6rem"></div>
   <Header />
   <!-- TODO: remove this demo margin -->
-  <div style="margin-top:4rem"></div>
+  <div style="margin-top:7rem"></div>
   <div class="resources-page__container">
     <div class="resources-page__cards">
       <TopicCard
