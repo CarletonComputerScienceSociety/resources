@@ -3,6 +3,7 @@
     "title": "Student Life",
     "icon": "fa fa-home",
     "colorSet": "red",
+    "path": "/resources/student-life",
     "children": [
       {
         "title": "Home",
@@ -35,6 +36,7 @@
     "title": "Academics",
     "icon": "fa fa-graduation-cap",
     "colorSet": "green",
+    "path": "/resources/academics",
     "children": [
       {
         "title": "Login",
@@ -58,6 +60,7 @@
     "title": "Careers",
     "icon": "fa fa-briefcase",
     "colorSet": "blue",
+    "path": "/resources/careers",
     "children": [
       {
         "title": "Profile",
@@ -99,6 +102,7 @@
     "title": "Self Learning",
     "icon": "fa fa-seedling",
     "colorSet": "orange",
+    "path": "/resources/self-learning",
     "children": [
       {
         "title": "Search",
@@ -114,6 +118,7 @@
     "title": "Courses",
     "icon": "fa fa-book",
     "colorSet": "purple",
+    "path": "/resources/courses",
     "children": [
       {
         "title": "Search",
@@ -129,6 +134,7 @@
     "title": "FAQs",
     "icon": "fa fa-lightbulb",
     "colorSet": "yellow",
+    "path": "/resources/faqs",
     "children": [
       {
         "title": "Search",
