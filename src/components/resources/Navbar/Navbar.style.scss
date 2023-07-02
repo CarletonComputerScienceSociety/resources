@@ -3,6 +3,11 @@
   top: 0;
   z-index: 1000;
 
+  a {
+    text-decoration: none !important;
+    color: black !important;
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;
@@ -10,12 +15,6 @@
     padding: 0.75rem 0.75rem;
     background-color: white;
     width: 100vw;
-  }
-
-  &__logo {
-    img {
-      width: 15rem;
-    }
   }
 
   &__menu {

@@ -1,4 +1,5 @@
 ---
+import { PageLogo } from "../../core/PageLogo";
 import { Search } from "../../islands";
 import "./Navbar.style.scss";
 const { searchList } = Astro.props;
@@ -6,11 +7,9 @@ const { searchList } = Astro.props;
 
 <div class="resources-navbar">
   <div class="resources-navbar__container">
-    <div class="resources-navbar__logo">
-      <a href="/">
-        <img src="/images/ccss-logo-2022.png" alt="logo" />
-      </a>
-    </div>
+    <a href="/resources">
+      <PageLogo text="Resources" />
+    </a>
     <div class="resources-navbar__center"></div>
     <div class="resources-navbar__right">
       <div class="resources-navbar__menu">

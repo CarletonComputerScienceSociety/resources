@@ -1,0 +1,9 @@
+---
+const { text } = Astro.props;
+import "./PageLogo.style.scss";
+---
+
+<div class="logo">
+  <img src="/images/ccss-logo.png" alt="logo" />
+  <div class="logo__text">{text}</div>
+</div>

@@ -8,21 +8,6 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
-    img {
-      width: 2.8rem;
-    }
-  }
-
-  &__logo {
-    display: flex;
-    align-items: center;
-  }
-
-  &__logo-text {
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-left: 0.8rem;
-    font-family: "Trebuchet MS", serif;
   }
 
   &__items {

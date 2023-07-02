@@ -1,0 +1,15 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 2.8rem;
+  }
+
+  &__text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-left: 0.8rem;
+    font-family: "Trebuchet MS", serif;
+  }
+}

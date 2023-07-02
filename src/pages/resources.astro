@@ -1,8 +1,7 @@
 ---
 import { getCollection } from "astro:content";
-import { TopicCard } from "../components/core";
-import { Search } from "../components/islands";
-import { Header, Navbar } from "../components/resources";
+import { PageLogo, TopicCard } from "../components/core";
+import { Header } from "../components/resources";
 import Base from "../layouts/Base.astro";
 import "./resources.style.scss";
 
@@ -20,10 +19,7 @@ const resourcePages = await getCollection("resources");
   <!-- TODO: remove this demo margin -->
   <div style="margin-top:1.5rem"></div>
   <div class="resources-page__navbar">
-    <div class="resources-page__logo">
-      <img src="./images/ccss-logo.png" alt="logo" />
-      <div class="resources-page__logo-text">Resources</div>
-    </div>
+    <PageLogo text="Resources" />
     <div class="resources-page__items">
       <div>About</div>
       <div>Contribute</div>
