@@ -16,14 +16,6 @@
     margin-bottom: 1rem;
   }
 
-  &__icon {
-    width: 2rem;
-    height: 2rem;
-    margin-right: 1rem;
-    border-radius: 2rem;
-    padding: 0.8rem;
-  }
-
   &__title {
     margin: auto 0;
     font-size: 1.4rem;
@@ -39,44 +31,4 @@
   &:hover {
     cursor: pointer;
   }
-}
-
-.red-card {
-  background-color: #ffdddd;
-  color: rgb(255, 72, 72);
-}
-
-.yellow-card {
-  background-color: #fffddd;
-  color: #fdc11a;
-}
-
-.blue-card {
-  background-color: #ddf8ff;
-  color: #42c4fc;
-}
-
-.cyan-card {
-  background-color: #ddfcff;
-  color: #2dc0ff;
-}
-
-.green-card {
-  background-color: #ddfff4;
-  color: #00c29f;
-}
-
-.black-card {
-  background-color: #dddddd;
-  color: #4b4b4b;
-}
-
-.orange-card {
-  background-color: #ffddcc;
-  color: #ff8c00;
-}
-
-.purple-card {
-  background-color: #f5ddff;
-  color: #a64dff;
 }

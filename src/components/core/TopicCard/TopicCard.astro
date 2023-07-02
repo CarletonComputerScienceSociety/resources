@@ -1,5 +1,5 @@
 ---
-import { Icon } from "astro-icon";
+import { CircleIcon } from "../CircleIcon";
 import "./TopicCard.style.scss";
 
 const { title, description, icon, colorSet } = Astro.props;
@@ -8,9 +8,7 @@ const { title, description, icon, colorSet } = Astro.props;
 <div class="topic-card">
   <div class="topic-card__content">
     <div class="topic-card__heading">
-      <div class={`topic-card__icon ${colorSet}`}>
-        <Icon name={icon} />
-      </div>
+      <CircleIcon icon={icon} colorSet={colorSet} size="size-normal" />
       <h3 class="topic-card__title">{title}</h3>
     </div>
 
