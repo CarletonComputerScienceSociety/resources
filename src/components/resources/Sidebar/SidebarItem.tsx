@@ -1,33 +1,63 @@
 import "./Sidebar.style.scss";
 import { useState } from "react";
+import { CircleIcon } from "../../core";
 import type { SidebarItemProps } from "./Sidebar.model";
 
 export default function SidebarItem(props: SidebarItemProps) {
   const [open, setOpen] = useState<boolean>(false);
 
-  return props.item.children ? (
-    <div className={open ? "sidebar-item open" : "sidebar-item"}>
-      <div className="sidebar-title">
-        <span>{props.item.title}</span>
-        <button className="menu-down" onClick={() => setOpen(!open)}>
-          {open ? (
-            <i className="fa fa-chevron-up"></i>
-          ) : (
-            <i className="fa fa-chevron-down"></i>
-          )}
-        </button>
+  return (
+    <>
+      <div
+        className={`sidebar-item ${open && "open"} ${props.color}-item-hover`}
+      >
+        <div className="sidebar-title">
+          {/* for group headings, display an icons and special style */}
+          {props.depth === 0 ? (
+            <a href={props.item.path || "#"} className="sidebar-item plain">
+              <div className="sidebar-title-container">
+                <CircleIcon
+                  icon={props.item.icon}
+                  size="size-small"
+                  colorSet={`${props.item.colorSet}-card`}
+                />
+                <span>{props.item.title}</span>
+              </div>
+            </a>
+          ) : null}
+
+          {/* for items at depth === 1, they should display inline with group headings */}
+          {props.depth !== 0 ? (
+            <a href={props.item.path || "#"} className="sidebar-item plain">
+              <div className="sidebar-title-container">
+                <div className={`sidebar-depth-${props.depth}`} />
+                <span className="sidebar-sub-item">{props.item.title}</span>
+              </div>
+            </a>
+          ) : null}
+
+          {/* if you have children, display a dropdown arrow */}
+          {props.item.children ? (
+            <button className="menu-down" onClick={() => setOpen(!open)}>
+              <i className={`fa fa-chevron-${open ? "up" : "down"}`} />
+            </button>
+          ) : null}
+        </div>
       </div>
-      <div className="sidebar-content">
-        {/* TODO: don't hardcode this */}
-        <div style={{ marginBottom: "0.5rem" }}></div>
-        {props.item.children.map((child, index) => (
-          <SidebarItem key={index} item={child} />
-        ))}
-      </div>
-    </div>
-  ) : (
-    <a href={props.item.path || "#"} className="sidebar-item plain">
-      {props.item.title}
-    </a>
+
+      {/* if you have children, display children */}
+      {props.item.children ? (
+        <div className={`sidebar-content ${open ? "open" : null}`}>
+          {props.item.children.map((child, index) => (
+            <SidebarItem
+              key={index}
+              item={child}
+              depth={props.depth + 1}
+              color={props.color}
+            />
+          ))}
+        </div>
+      ) : null}
+    </>
   );
 }

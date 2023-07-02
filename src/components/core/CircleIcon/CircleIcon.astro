@@ -1,0 +1,10 @@
+---
+import { Icon } from "astro-icon";
+import "./CircleIcon.style.scss";
+
+const { icon, colorSet, size } = Astro.props;
+---
+
+<div class={`circle-icon ${colorSet} ${size}`}>
+  <Icon name={icon} />
+</div>

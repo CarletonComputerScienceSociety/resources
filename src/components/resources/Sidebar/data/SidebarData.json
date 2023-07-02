@@ -2,44 +2,39 @@
   {
     "title": "Student Life",
     "icon": "fa fa-home",
+    "colorSet": "red",
     "children": [
       {
         "title": "Home",
-        "icon": "mdi:home",
         "path": "/"
       },
       {
         "title": "About",
-        "icon": "mdi:home",
         "path": "/about"
       },
       {
         "title": "Contact",
-        "icon": "mdi:home",
         "children": [
           {
-            "title": "Facebook",
-            "icon": "mdi:home"
+            "title": "Facebook"
           },
           {
-            "title": "Twitter",
-            "icon": "mdi:home"
+            "title": "Twitter"
           },
           {
-            "title": "Instagram",
-            "icon": "mdi:home"
+            "title": "Instagram"
           }
         ]
       },
       {
-        "title": "FAQ",
-        "icon": "mdi:home"
+        "title": "FAQ"
       }
     ]
   },
   {
     "title": "Academics",
-    "icon": "mdi:home",
+    "icon": "fa fa-graduation-cap",
+    "colorSet": "green",
     "children": [
       {
         "title": "Login",
@@ -61,7 +56,8 @@
   },
   {
     "title": "Careers",
-    "icon": "mdi:home",
+    "icon": "fa fa-briefcase",
+    "colorSet": "blue",
     "children": [
       {
         "title": "Profile",
@@ -101,7 +97,8 @@
   },
   {
     "title": "Self Learning",
-    "icon": "mdi:home",
+    "icon": "fa fa-seedling",
+    "colorSet": "orange",
     "children": [
       {
         "title": "Search",
@@ -114,13 +111,33 @@
     ]
   },
   {
-    "title": "Report Issue",
-    "icon": "mdi:home",
-    "path": "/support"
+    "title": "Courses",
+    "icon": "fa fa-book",
+    "colorSet": "purple",
+    "children": [
+      {
+        "title": "Search",
+        "path": "/search"
+      },
+      {
+        "title": "History",
+        "path": "/history"
+      }
+    ]
   },
   {
-    "title": "Contribute",
-    "icon": "mdi:home",
-    "path": "/report-bug"
+    "title": "FAQs",
+    "icon": "fa fa-lightbulb",
+    "colorSet": "yellow",
+    "children": [
+      {
+        "title": "Search",
+        "path": "/search"
+      },
+      {
+        "title": "History",
+        "path": "/history"
+      }
+    ]
   }
 ]
