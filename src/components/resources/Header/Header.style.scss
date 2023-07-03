@@ -7,6 +7,8 @@
 
   &__container {
     width: 75rem;
+    padding-left: calc(5% + 9px);
+    padding-right: calc(5% + 9px);
     height: 100%;
     display: flex;
     justify-content: space-between;

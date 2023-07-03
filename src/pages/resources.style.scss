@@ -4,7 +4,9 @@
   }
 
   &__navbar {
-    width: 75rem;
+    max-width: 75rem;
+    padding-left: calc(5% + 9px);
+    padding-right: calc(5% + 9px);
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -25,6 +27,12 @@
     justify-content: space-between;
     gap: 3rem;
     width: 75rem;
+    padding-left: calc(5% + 9px);
+    padding-right: calc(5% + 9px);
+
+    @media (max-width: 1200px) {
+      justify-content: space-evenly;
+    }
 
     a {
       text-decoration: none;
