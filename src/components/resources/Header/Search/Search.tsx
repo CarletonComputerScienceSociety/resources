@@ -30,6 +30,7 @@ function Search(props: SearchProps) {
   return (
     <>
       <div className="header-search-bar">
+        <svg className="fa fa-search" />
         <input
           type="text"
           value={query}
@@ -37,20 +38,21 @@ function Search(props: SearchProps) {
           placeholder="Search..."
           className="search"
         />
-        <i className="fa fa-search"></i>
       </div>
       {query.length > 1 ? (
         <div className="header-search-results">
+          <div className="header-search-results__text">Search Results</div>
           {posts && posts.length > 0 ? (
-            <ul>
+            <div className="header-search-results__link-container">
               {posts.map((post) => (
-                <li key={post.id}>
-                  <a href={`/${post.slug}`}>{post.data.title}</a>
-                </li>
+                <a className="header-search-results__link" href={`/${post.slug}`}>
+                  <div className="header-search-results__link__anchor">{post.data.title}</div>
+                  <div className="header-search-results__link__cta">Go to File</div>
+                </a>
               ))}
-            </ul>
+            </div>
           ) : (
-            <p>No Results</p>
+            <p className="header-search-results__no-result">No Results</p>
           )}
         </div>
       ) : null}
