@@ -16,10 +16,11 @@ sources:
 --
 
 **Description**\
-COMP1405/1406Z section combines Intro to CS I and Intro to CS II into a single term. The course is taught by Dave McKenney. It is for Dev Degree students and BCS students with an admit average of 90% or above. You will need to submit a registration override request to get into the course. 
+COMP1405/1406Z section combines Intro to CS I and Intro to CS II into a single term. The course is taught by Dave McKenney. It is for Dev Degree students and BCS students with an admit average of 90% or above. You will need to submit a registration override request to get into the course.
 
 **Content**\
 You'll be learning something new or reviewing old content at a leisurely pace
+
 - Variables
 - String modification(adding strings, splitting them, etc, etc)
 - If statements
