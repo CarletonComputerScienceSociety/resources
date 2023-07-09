@@ -1,19 +1,22 @@
 ---
 layout: ../../../layouts/Faq.astro
-title: Can I handle COMP1405/1406 Z-Section
-short_answer: If you've done CS in grade 11 or 12, it's an easy 90%
+title: What is COMP1405/1406 Z Section and can I handle it?
+short_answer: COMP1405/1406 Z Section is 2 courses squished into 1 term. COMP1405Z in first half and COMP1406 in second half of the term. If you've done CS in grade 11 or 12, it's an easy 90%
 date: 2023-09-02T00:00:00.000Z
 draft: false
-slug: faq/can-i-handle-z-section
+slug: faq/z-section
 tags:
   - courses
 sources:
   - name: 2022 Fall COMP1405/1406Z Student
 ---
 
-**TDLR**: If you've done CS in **grade 11 or 12**, it's an **easy 90%**.
+**TDLR**: COMP1405/1406 Z Section is 2 courses squished into 1 term. COMP1405Z in first half and COMP1406 in second half of the term. If you've done CS in grade 11 or 12, it's an easy 90%
 
 --
+
+**Description**\
+COMP1405/1406Z section combines Intro to CS I and Intro to CS II into a single term. The course is taught by Dave McKenney. It is for Dev Degree students and BCS students with an admit average of 90% or above. You will need to submit a registration override request to get into the course. 
 
 **Content**\
 You'll be learning something new or reviewing old content at a leisurely pace
