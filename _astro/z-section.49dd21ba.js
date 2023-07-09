@@ -1,4 +1,4 @@
-import{c as o,s as l}from"./Base.e259927d.js";import{$ as u}from"./Faq.66d0283a.js";import{F as d}from"./resources.2e865943.js";/* empty css                                  */import"./jsx-runtime.95f74388.js";import"./index.ed373d49.js";/* empty css                       *//* empty css                           *//* empty css                              *//* empty css                                */import"./Search.11832003.js";/* empty css                              *//* empty css                              *//* empty css                               *//* empty css                              *//* empty css                                 */const s={};function c(n){return n.replaceAll(/__ASTRO_IMAGE_="(.+)"/gm,(e,t)=>l({src:s[t].src,...s[t].attributes}))}const a=c(`<p><strong>TDLR</strong>: COMP1405/1406 Z Section is 2 courses squished into 1 term. COMP1405Z in first half and COMP1406 in second half of the term. If you’ve done CS in grade 11 or 12, it’s an easy 90%</p>
+import{c as o,s as l}from"./Base.5bed4b3d.js";import{$ as u}from"./Faq.8227df22.js";import{F as d}from"./resources.a13c6e54.js";/* empty css                                  */import"./jsx-runtime.95f74388.js";import"./index.ed373d49.js";/* empty css                       *//* empty css                           *//* empty css                              *//* empty css                                */import"./Search.11832003.js";/* empty css                              *//* empty css                              *//* empty css                               *//* empty css                              *//* empty css                                 */const s={};function c(n){return n.replaceAll(/__ASTRO_IMAGE_="(.+)"/gm,(e,t)=>l({src:s[t].src,...s[t].attributes}))}const a=c(`<p><strong>TDLR</strong>: COMP1405/1406 Z Section is 2 courses squished into 1 term. COMP1405Z in first half and COMP1406 in second half of the term. If you’ve done CS in grade 11 or 12, it’s an easy 90%</p>
 <p>—</p>
 <p><strong>Description</strong><br>
 COMP1405/1406Z section combines Intro to CS I and Intro to CS II into a single term. The course is taught by Dave McKenney. It is for Dev Degree students and BCS students with an admit average of 90% or above. You will need to submit a registration override request to get into the course.</p>
@@ -27,10 +27,11 @@ In the past, Dave has given 1% bonus marks for workshops done. These workshops a
 --
 
 **Description**\\
-COMP1405/1406Z section combines Intro to CS I and Intro to CS II into a single term. The course is taught by Dave McKenney. It is for Dev Degree students and BCS students with an admit average of 90% or above. You will need to submit a registration override request to get into the course. 
+COMP1405/1406Z section combines Intro to CS I and Intro to CS II into a single term. The course is taught by Dave McKenney. It is for Dev Degree students and BCS students with an admit average of 90% or above. You will need to submit a registration override request to get into the course.
 
 **Content**\\
 You'll be learning something new or reviewing old content at a leisurely pace
+
 - Variables
 - String modification(adding strings, splitting them, etc, etc)
 - If statements
@@ -49,4 +50,5 @@ In COMP1405A/B/C, you need to do 1 weekly assignment, and you need to do 1 tutor
 First years typically take 5 courses at a time. Because COMP1405/1406 run in the same term, you will be taking COMP1405 and 3 courses in the first half of the term and COMP1406 and 3 courses in the second half of the term. You will only ever be doing 4 courses at once.[Title](can-i-handle-z-section.md)
 
 **Bonus Marks**\\
-In the past, Dave has given 1% bonus marks for workshops done. These workshops are about how to manage your time and university life(unrelated to course material). You can do a total of 10 workshops for 10% that can either be put on your COMP1405 final grade or COMP1406 final grade`}function g(){return a}function f(){return[]}async function y(){const{layout:n,...e}=m;e.file=r,e.url=i;const t=o(d,{"set:html":a});return o(u,{file:r,url:i,content:e,frontmatter:e,headings:f(),rawContent:h,compiledContent:g,"server:root":!0,children:t})}y[Symbol.for("astro.needsHeadRendering")]=!1;export{y as Content,g as compiledContent,y as default,r as file,m as frontmatter,f as getHeadings,s as images,h as rawContent,i as url};
+In the past, Dave has given 1% bonus marks for workshops done. These workshops are about how to manage your time and university life(unrelated to course material). You can do a total of 10 workshops for 10% that can either be put on your COMP1405 final grade or COMP1406 final grade
+`}function g(){return a}function f(){return[]}async function y(){const{layout:n,...e}=m;e.file=r,e.url=i;const t=o(d,{"set:html":a});return o(u,{file:r,url:i,content:e,frontmatter:e,headings:f(),rawContent:h,compiledContent:g,"server:root":!0,children:t})}y[Symbol.for("astro.needsHeadRendering")]=!1;export{y as Content,g as compiledContent,y as default,r as file,m as frontmatter,f as getHeadings,s as images,h as rawContent,i as url};
