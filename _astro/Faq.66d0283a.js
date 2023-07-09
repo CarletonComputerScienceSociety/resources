@@ -1,4 +1,4 @@
-import{c as g,a as u,r as a,b as t,m as v,e as $,d as _,F as d,f as i}from"./resources.29088667.js";/* empty css                                  */import"./jsx-runtime.95f74388.js";import{$ as h}from"./Base.3b55ce20.js";/* empty css                           */const q=g("https://resources.carletoncomputerscience.ca"),b=u(async(o,p,c)=>{const n=o.createAstro(q,p,c);n.self=b;const{frontmatter:e}=n.props,l={title:e.title,description:e.short_answer,url:"",image:"/"};return a`${t(o,"Base",h,{metadata:l},{default:s=>a`
+import{c as g,a as u,r as a,b as t,m as v,e as $,d as _,F as d,f as i}from"./resources.2e865943.js";/* empty css                                  */import"./jsx-runtime.95f74388.js";import{$ as h}from"./Base.e259927d.js";/* empty css                           */const q=g("https://resources.carletoncomputerscience.ca"),b=u(async(o,p,c)=>{const n=o.createAstro(q,p,c);n.self=b;const{frontmatter:e}=n.props,l={title:e.title,description:e.short_answer,url:"",image:"/"};return a`${t(o,"Base",h,{metadata:l},{default:s=>a`
   ${v(s)}<div class="faq-page">
     <div class="faq-page__body">
       <div class="faq-page__card">
