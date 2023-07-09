@@ -3,7 +3,7 @@ layout: ../../layouts/Resource.astro
 title: My Blog Post
 date: 2019-01-01T00:00:00.000Z
 draft: false
-slug: resources/example
+slug: example
 ---
 
 # h1 Heading 8-)
