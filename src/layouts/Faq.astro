@@ -1,0 +1,76 @@
+---
+import { PageLogo } from "../components/core";
+import Base from "./Base.astro";
+import "./Faq.style.scss";
+
+const { frontmatter } = Astro.props;
+const metadata = {
+  title: frontmatter.title,
+  description: frontmatter.short_answer,
+  url: "",
+  image: "/",
+};
+
+// const dateOptions: object = {
+//   year: "numeric",
+//   month: "long",
+//   day: "numeric",
+// };
+
+// const formattedPublishDate = new Date(frontmatter.date).toLocaleDateString(
+//   "en-US",
+//   dateOptions
+// );
+---
+
+<Base {metadata}>
+  <div class="faq-page">
+    <div class="faq-page__body">
+      <div class="faq-page__card">
+        <div class="faq-page__icon">
+          <!-- <CircleIcon
+            icon="fa fa-lightbulb"
+            colorSet="yellow-card"
+            size="size-normal"
+          /> -->
+          <a href="https://ccss.carleton.ca"><PageLogo text="FAQs" /></a>
+        </div>
+        <h1>{frontmatter.title}</h1>
+        <div class="faq-page__content">
+          <slot />
+        </div>
+        <div class="faq-page__sources">
+          {
+            frontmatter?.sources?.length > 0 ? (
+              <>
+                <p>Sources:</p>
+                <>
+                  {frontmatter?.sources.map(
+                    (
+                      source: {
+                        link: string | URL | null | undefined;
+                        name: unknown;
+                      },
+                      index: number
+                    ) => (
+                      <div class="faq-page__source">
+                        <span>
+                          <a href={source.link}>({index + 1})</a>
+                        </span>{" "}
+                        <a href={source.link}>{source.name}</a>
+                      </div>
+                    )
+                  )}
+                </>
+              </>
+            ) : null
+          }
+          <!-- <div class="faq-page__updated">
+            <span>Last Updated: </span>
+            <span>{formattedPublishDate}</span>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</Base>
