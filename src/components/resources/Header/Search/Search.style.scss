@@ -39,7 +39,7 @@
   width: 25rem;
   border: 1px solid rgb(205, 205, 205);
   border-radius: 4px;
-  margin-top: 8px;
+  margin-top: 12px;
   padding: 1rem 1rem 1rem 0.5rem;
   background: white;
 
@@ -97,4 +97,30 @@
     margin: 0;
   }
 
+}
+
+.header-search-results:after,
+.header-search-results:before {
+  bottom: 100%;
+  left: 5%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.header-search-results:after {
+  border-color: rgba(238, 238, 238, 0);
+  border-bottom-color: white;
+  border-width: 9px;
+  margin-left: -15px;
+}
+
+.header-search-results:before {
+  border-color: rgba(204, 204, 204, 0);
+  border-bottom-color: rgb(205, 205, 205);
+  border-width: 10px;
+  margin-left: -16px;
 }
