@@ -46,7 +46,7 @@ function Search(props: SearchProps) {
             <div className="header-search-results__link-container">
               {posts.map((post) => (
                 <a className="header-search-results__link" href={`/${post.slug}`}>
-                  <div className="header-search-results__link__anchor">{post.data.title}</div>
+                  <div className="header-search-results__link__title">{post.data.title}</div>
                   <div className="header-search-results__link__cta">Go to File</div>
                 </a>
               ))}
