@@ -6,29 +6,38 @@
     "path": "/student-life",
     "children": [
       {
-        "title": "Home",
+        "title": "Making the Most of University",
         "path": "/"
       },
       {
-        "title": "About",
-        "path": "/about"
+        "title": "How to Get Involved",
+        "path": "/contact"
       },
       {
-        "title": "Contact",
+        "title": "Health and Wellness",
+        "path": "/contact",
         "children": [
           {
-            "title": "Facebook"
+            "title": "Avoiding Burnout",
+            "path": "/contact"
           },
           {
-            "title": "Twitter"
+            "title": "Office Ergonomics",
+            "path": "/contact"
           },
           {
-            "title": "Instagram"
+            "title": "Mental Health",
+            "path": "/contact"
+          },
+          {
+            "title": "Beginner's Gym Guide",
+            "path": "/contact"
           }
         ]
       },
       {
-        "title": "FAQ"
+        "title": "Imposter Syndrome",
+        "path": "/contact"
       }
     ]
   },
@@ -39,20 +48,16 @@
     "path": "/academics",
     "children": [
       {
-        "title": "Login",
-        "path": "/login"
+        "title": "Streams Explained",
+        "path": "/academics/streams-explained"
       },
       {
-        "title": "Register",
-        "path": "/register"
+        "title": "Do grades matter?",
+        "path": "/academics/do-grades-matter"
       },
       {
-        "title": "Forgot Password",
-        "path": "/forgot-password"
-      },
-      {
-        "title": "Reset Password",
-        "path": "/reset-password"
+        "title": "Plagirism and Cheating",
+        "path": "/academics/plagirism-and-cheating"
       }
     ]
   },
@@ -63,38 +68,168 @@
     "path": "/careers",
     "children": [
       {
-        "title": "Profile",
-        "path": "/profile"
-      },
-      {
-        "title": "Settings",
+        "title": "Carleton Opportunities",
+        "path": "/careers/carleton-opportunities",
         "children": [
           {
-            "title": "Account",
-            "path": "/settings/account"
+            "title": "Teaching Assistant-ships",
+            "path": "/careers/teaching-assistant"
           },
           {
-            "title": "Billing",
-            "children": [
-              {
-                "title": "Payment",
-                "path": "/settings/billing/payment"
-              },
-              {
-                "title": "Subscription",
-                "path": "/settings/billing/subscription"
-              }
-            ]
+            "title": "DSRI Internships",
+            "path": "/careers/dsri-internships"
           },
           {
-            "title": "Notifications",
-            "path": "/settings/notifications"
+            "title": "I-CUREUS Internships",
+            "path": "/careers/i-cureus-internships"
+          },
+          {
+            "title": "Student's As Partners",
+            "path": "/careers/students-as-partners"
           }
         ]
       },
       {
-        "title": "Logout",
-        "path": "/logout"
+        "title": "Carleton Co-op",
+        "path": "/careers",
+        "children": [
+          {
+            "title": "Co-op Pros and Cons",
+            "path": "/careers//coop/should-i-drop-coop"
+          },
+          {
+            "title": "Co-op vs Internship Explained",
+            "path": "/careers/coop/coop-vs-internship"
+          },
+          {
+            "title": "Carleton Co-op vs Other Universities",
+            "path": "/careers//coop/coop-vs-internship"
+          },
+          {
+            "title": "Courses during Co-op",
+            "path": "/careers/coop/courses-during-coop"
+          },
+          {
+            "title": "Should I drop Co-op?",
+            "path": "/careers/coop/should-i-drop-coop"
+          }
+        ]
+      },
+      {
+        "title": "Hiring Process",
+        "path": "/careers/hiring-process",
+        "children": [
+          {
+            "title": "Job Postings",
+            "path": "/careers/job-search",
+            "children": [
+              {
+                "title": "Term Length Tradeoffs",
+                "path": "/careers//coop/should-i-drop-coop"
+              },
+              {
+                "title": "Job Titles Explained",
+                "path": "/careers//coop/should-i-drop-coop"
+              },
+              {
+                "title": "Title Seniority Explained",
+                "path": "/careers//coop/should-i-drop-coop"
+              }
+            ]
+          },
+          {
+            "title": "Job Searching",
+            "path": "/careers/job-search",
+            "children": [
+              {
+                "title": "Search Platforms",
+                "path": "/careers/job-search/search-platforms"
+              },
+              {
+                "title": "Carleton and Ottawa Opportunities",
+                "path": "/careers/job-search/carleton-and-ottawa-opportunities"
+              }
+            ]
+          },
+          {
+            "title": "Networking",
+            "path": "/careers/job-search",
+            "children": [
+              {
+                "title": "Career Fairs and Events",
+                "path": "/careers/networking/career-fairs-events"
+              },
+              {
+                "title": "LinkedIn",
+                "path": "/careers/networking/linkedin"
+              }
+            ]
+          },
+          {
+            "title": "Resumes",
+            "path": "/careers/job-search",
+            "children": [
+              {
+                "title": "Objective Resume Advice",
+                "path": "/careers/networking/career-fairs-events"
+              },
+              {
+                "title": "Resume Templates",
+                "path": "/careers/resumes/resume-templates"
+              }
+            ]
+          },
+          {
+            "title": "Interviews",
+            "path": "/careers/job-search",
+            "children": [
+              {
+                "title": "Types of Interviews",
+                "path": "/careers/interviews/types-of-interviews"
+              },
+              {
+                "title": "Preparing for Interviews",
+                "path": "/careers/interviews/preparing-for-interviews"
+              },
+              {
+                "title": "Before Accepting an Offer",
+                "path": "/careers/interviews/before-accepting-an-offer"
+              }
+            ]
+          },
+          {
+            "title": "Workplaces",
+            "path": "/careers/workplaces",
+            "children": [
+              {
+                "title": "Dream Company Falacy",
+                "path": "/careers/workplaces/dream-company-falacy"
+              },
+              {
+                "title": "Organization Tradeoffs",
+                "path": "/careers/workplaces/organization-tradeoffs"
+              },
+              {
+                "title": "Team Structure Tradeoffs",
+                "path": "/careers/workplaces/team-structure-tradeoffs"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "On The Job",
+        "path": "/careers/on-the-job",
+        "children": [
+          {
+            "title": "What to Expect from your Internship",
+            "path": "/careers/what-to-expect-from-your-internship"
+          },
+          {
+            "title": "Making the Most of your Internship",
+            "path": "/careers/making-the-most-of-your-internship"
+          }
+        ]
       }
     ]
   },
@@ -105,12 +240,8 @@
     "path": "/self-learning",
     "children": [
       {
-        "title": "Search",
-        "path": "/search"
-      },
-      {
-        "title": "History",
-        "path": "/history"
+        "title": "Side Projects",
+        "path": "/self-learning/side-projects"
       }
     ]
   },
@@ -121,12 +252,46 @@
     "path": "/courses",
     "children": [
       {
-        "title": "Search",
-        "path": "/search"
+        "title": "Course Registration",
+        "path": "/courses/course-registration",
+        "children": [
+          {
+            "title": "Registration Advice",
+            "path": "/courses/course-registration/registration-advice"
+          },
+          {
+            "title": "Resource List",
+            "path": "/courses/course-registration/resource-list"
+          }
+        ]
       },
       {
-        "title": "History",
-        "path": "/history"
+        "title": "Breadth Electives",
+        "path": "/courses/breadth-electives",
+        "children": [
+          {
+            "title": "CS Related",
+            "path": "/courses/breadth-electives/computer-science-related"
+          },
+          {
+            "title": "Other Suggestions",
+            "path": "/courses/breadth-electives/other-suggestions"
+          }
+        ]
+      },
+      {
+        "title": "COMP Courses",
+        "path": "/courses/comp-courses",
+        "children": [
+          {
+            "title": "COMP 1405 Z",
+            "path": "/courses/comp-courses/comp1405-z"
+          },
+          {
+            "title": "How to Succeed in X Course",
+            "path": "/courses/comp-courses/succeed-in-x-course"
+          }
+        ]
       }
     ]
   },
@@ -134,16 +299,6 @@
     "title": "FAQs",
     "icon": "fa fa-lightbulb",
     "colorSet": "yellow",
-    "path": "/faqs",
-    "children": [
-      {
-        "title": "Search",
-        "path": "/search"
-      },
-      {
-        "title": "History",
-        "path": "/history"
-      }
-    ]
+    "path": "/faqs"
   }
 ]
