@@ -270,7 +270,7 @@
         "path": "/courses/breadth-electives",
         "children": [
           {
-            "title": "CS Related",
+            "title": "Computer Science Related",
             "path": "/courses/breadth-electives/computer-science-related"
           },
           {

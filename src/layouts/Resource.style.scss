@@ -1,7 +1,44 @@
+.resources-layout {
+  &__title {
+    font-size: 2.7rem;
+    font-weight: bold;
+    margin-top: 2rem !important;
+    margin-bottom: 1.3rem !important;
+  }
+
+  &__updated {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+    color: rgb(153, 153, 153);
+  }
+
+  &__location {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+
+  &__slug {
+    font-size: 1rem;
+  }
+}
+
 .resources-layout__container {
   display: flex;
   min-height: 100%;
   margin-top: 5.1rem;
+  color: rgb(42, 42, 42);
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 3rem;
+    color: black;
+  }
 }
 
 .resources-layout__content {
@@ -9,7 +46,9 @@
   padding: 1rem;
   padding-top: 0rem;
   flex-direction: column;
-  margin-left: 22rem;
-  margin-right: 7rem;
+  margin-left: 27rem;
+  margin-right: 27rem;
   min-height: 100vh;
+  font-size: 1.15rem;
+  margin-bottom: 6rem;
 }

@@ -3,6 +3,7 @@ import Base from "../layouts/Base.astro";
 import { Navbar, Sidebar } from "../components/resources";
 import "./Resource.style.scss";
 import { getCollection } from "astro:content";
+import { CircleIcon } from "../components/core/CircleIcon";
 
 const { frontmatter } = Astro.props;
 const metadata = {
@@ -13,6 +14,45 @@ const metadata = {
 };
 
 const resourcePages = await getCollection("resources");
+
+const dateOptions: object = {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+};
+
+const formattedPublishDate = new Date(frontmatter.date).toLocaleDateString(
+  "en-US",
+  dateOptions
+);
+
+const formattedSlug = frontmatter.slug
+  .replace(/-/g, " ")
+  .replace(/\b\w/g, (l) => l.toUpperCase())
+  .replace(/\//g, " > ");
+
+// TODO: move to a config file
+
+const iconMap = {
+  "student-life": "fa fa-home",
+  academics: "fa fa-graduation-cap",
+  careers: "fa fa-briefcase",
+  "self-learning": "fa fa-seedling",
+  courses: "fa fa-book",
+  faqs: "fa fa-lightbulb",
+};
+
+const colorSetMap = {
+  "student-life": "red-card",
+  academics: "green-card",
+  careers: "blue-card",
+  "self-learning": "orange-card",
+  courses: "purple-card",
+  faqs: "yellow-card",
+};
+
+const icon = iconMap[frontmatter.slug.split("/")[0]];
+const colorSet = colorSetMap[frontmatter.slug.split("/")[0]];
 ---
 
 <Base {metadata}>
@@ -20,6 +60,18 @@ const resourcePages = await getCollection("resources");
   <div class="resources-layout__container">
     <Sidebar client:load />
     <div class="resources-layout__content">
+      <div class="resources-layout__location">
+        <div>
+          <CircleIcon icon={icon} colorSet={colorSet} size="size-normal" />
+        </div>
+        <!-- <div class="resources-layout__slug">
+          {formattedSlug}
+        </div> -->
+      </div>
+      <h1 class="resources-layout__title">{frontmatter.title}</h1>
+      <p class="resources-layout__updated">
+        Last Updated: {formattedPublishDate}
+      </p>
       <slot />
     </div>
   </div>
