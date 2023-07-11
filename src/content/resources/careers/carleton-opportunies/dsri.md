@@ -11,7 +11,7 @@ sources:
     link: https://carleton.ca/scs/research/
 ---
 
-Dean’s Summer Research Internships **(DSRIs)** allow students the opportunity to work with professors to conduct research. To be eligible, students must have **first-year** standing and be enrolled full-time, with an overall **CGPA of 10.0** or higher at the end of their first term of study.
+Dean’s Summer Research Internships **(DSRIs)** allow students the opportunity to work with professors to conduct research. To be eligible, students must have **first-year** standing and be enrolled full-time, with an overall **GPA of 10.0** or higher at the end of their first term of study.
 
 Eligible students are e-mailed an invitation to apply, with a **mid-February** submission deadline. The DSRI application requires students to discuss why they want to do research, to identify the professor they wish to work with, explain why they want to join the professor’s research program, and describe what they will work on.
 
