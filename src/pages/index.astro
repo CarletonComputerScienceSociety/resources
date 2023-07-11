@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import { PageLogo, TopicCard } from "../components/core";
+import { Footer, PageLogo, TopicCard } from "../components/core";
 import { Header } from "../components/resources";
 import Base from "../layouts/Base.astro";
 import "./resources.style.scss";
@@ -84,4 +84,5 @@ const resourcePages = await getCollection("resources");
   </div>
   <!-- TODO: remove this demo margin -->
   <div style="margin-top:8rem"></div>
+  <Footer />
 </Base>
