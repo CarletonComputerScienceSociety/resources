@@ -14,6 +14,14 @@
         "path": "/contact"
       },
       {
+        "title": "Important Abbreviations",
+        "path": "/student-life/important-abbreviations"
+      },
+      {
+        "title": "Study Spots",
+        "path": "/student-life/study-spots"
+      },
+      {
         "title": "Health and Wellness",
         "path": "/contact",
         "children": [
@@ -32,12 +40,12 @@
           {
             "title": "Beginner's Gym Guide",
             "path": "/contact"
+          },
+          {
+            "title": "Imposter Syndrome",
+            "path": "/contact"
           }
         ]
-      },
-      {
-        "title": "Imposter Syndrome",
-        "path": "/contact"
       }
     ]
   },
@@ -48,12 +56,16 @@
     "path": "/academics",
     "children": [
       {
+        "title": "Succeeding Academically",
+        "path": "/academics/succeeding-academically"
+      },
+      {
         "title": "Streams Explained",
         "path": "/academics/streams-explained"
       },
       {
-        "title": "Do grades matter?",
-        "path": "/academics/do-grades-matter"
+        "title": "The Value of Grades",
+        "path": "/academics/the-value-of-grades"
       },
       {
         "title": "Plagirism and Cheating",
@@ -76,8 +88,8 @@
             "path": "/careers/teaching-assistant"
           },
           {
-            "title": "DSRI Internships",
-            "path": "/careers/dsri-internships"
+            "title": "Dean's Summer Research Internships",
+            "path": "/careers/carleton-opportunities/dsri"
           },
           {
             "title": "I-CUREUS Internships",
@@ -283,6 +295,10 @@
         "title": "COMP Courses",
         "path": "/courses/comp-courses",
         "children": [
+          {
+            "title": "Traditionally Difficult Courses",
+            "path": "/courses/comp-courses/traditionally-difficult-courses"
+          },
           {
             "title": "COMP 1405 Z",
             "path": "/courses/comp-courses/comp1405-z"

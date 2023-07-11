@@ -23,6 +23,15 @@
   &__slug {
     font-size: 1rem;
   }
+
+  &__sources {
+    margin-top: 4rem;
+    font-size: 0.85rem;
+    a {
+      color: black !important;
+      text-decoration: none;
+    }
+  }
 }
 
 .resources-layout__container {
@@ -52,4 +61,40 @@
   min-height: fit-content;
   font-size: 1.15rem;
   margin-bottom: 6rem;
+}
+
+.a-red-card {
+  a {
+    color: rgb(255, 72, 72);
+  }
+}
+
+.a-yellow-card {
+  a {
+    color: #fdc11a;
+  }
+}
+
+.a-blue-card {
+  a {
+    color: #42c4fc;
+  }
+}
+
+.a-green-card {
+  a {
+    color: #00c29f;
+  }
+}
+
+.a-orange-card {
+  a {
+    color: #ff8c00;
+  }
+}
+
+.a-purple-card {
+  a {
+    color: #a64dff;
+  }
 }
