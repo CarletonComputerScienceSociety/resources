@@ -16,6 +16,9 @@
     display: flex;
     align-items: center;
     gap: 3rem;
+    @media (max-width: 420px) {
+      display: none;
+    }
   }
 
   &__cards {
