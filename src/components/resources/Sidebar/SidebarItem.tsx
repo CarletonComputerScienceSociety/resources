@@ -71,7 +71,7 @@ export default function SidebarItem(props: SidebarItemProps) {
             />
           ))}
         </div>
-      ): null}
+      ) : null}
     </>
   );
 }
