@@ -1,16 +1,12 @@
 import "./Sidebar.style.scss";
 import { useState, useEffect } from "react";
 import { CircleIcon } from "../../core";
-import type { SidebarItemProps } from "./Sidebar.model";
-
-interface RecursiveSidebarItemProps extends SidebarItemProps {
-  children?: RecursiveSidebarItemProps[];
-}
+import type { SidebarItem, SidebarItemProps } from "./Sidebar.model";
 
 export default function SidebarItem(props: SidebarItemProps) {
   const [open, setOpen] = useState<boolean>(false);
 
-  const checkActivePath = (item: RecursiveSidebarItemProps) => {
+  const checkActivePath = (item: SidebarItem) => {
     if (props.item.path && window.location.pathname.includes(props.item.path)) {
       setOpen(true);
     } else if (item.children) {
@@ -35,9 +31,9 @@ export default function SidebarItem(props: SidebarItemProps) {
             <a href={props.item.path || "#"} className="sidebar-item plain">
               <div className="sidebar-title-container">
                 <CircleIcon
-                  icon={props.item.icon}
+                  icon={props.item.icon || ""}
                   size="size-small"
-                  colorSet={`${props.item.colorSet}-card`}
+                  colorSet={`${props.item.color || ""}-card`}
                 />
                 <span>{props.item.title}</span>
               </div>
@@ -57,14 +53,14 @@ export default function SidebarItem(props: SidebarItemProps) {
           {/* if you have children, display a dropdown arrow */}
           {props.item.children ? (
             <button className="menu-down" onClick={() => setOpen(!open)}>
-              <i className={`fa fa-chevron-${open ? "up" : "down"}`} />               
+              <i className={`fa fa-chevron-${open ? "up" : "down"}`} />
             </button>
           ) : null}
         </div>
       </div>
 
       {/* if you have children, display children */}
-      {props.item.children && (
+      {props.item.children ? (
         <div className={`sidebar-content ${open ? "open" : null}`}>
           {props.item.children.map((child, index) => (
             <SidebarItem
@@ -75,7 +71,7 @@ export default function SidebarItem(props: SidebarItemProps) {
             />
           ))}
         </div>
-      )}
+      ): null}
     </>
   );
 }
