@@ -6,7 +6,7 @@ export default function Sidebar() {
   return (
     <div className="sidebar">
       {items.map((item, index) => (
-        <SidebarItem key={index} item={item} depth={0} color={item.colorSet} />
+        <SidebarItem key={index} item={item} depth={0} color={item.color} />
       ))}
     </div>
   );

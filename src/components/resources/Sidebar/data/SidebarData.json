@@ -2,7 +2,7 @@
   {
     "title": "Student Life",
     "icon": "fa fa-home",
-    "colorSet": "red",
+    "color": "red",
     "path": "/student-life",
     "children": [
       {
@@ -52,7 +52,7 @@
   {
     "title": "Academics",
     "icon": "fa fa-graduation-cap",
-    "colorSet": "green",
+    "color": "green",
     "path": "/academics",
     "children": [
       {
@@ -80,7 +80,7 @@
   {
     "title": "Careers",
     "icon": "fa fa-briefcase",
-    "colorSet": "blue",
+    "color": "blue",
     "path": "/careers",
     "children": [
       {
@@ -107,7 +107,7 @@
       },
       {
         "title": "Carleton Co-op",
-        "path": "/careers",
+        "path": "/careers/coop",
         "children": [
           {
             "title": "Co-op Pros and Cons",
@@ -252,7 +252,7 @@
   {
     "title": "Self Learning",
     "icon": "fa fa-seedling",
-    "colorSet": "orange",
+    "color": "orange",
     "path": "/self-learning",
     "children": [
       {
@@ -264,7 +264,7 @@
   {
     "title": "Courses",
     "icon": "fa fa-book",
-    "colorSet": "purple",
+    "color": "purple",
     "path": "/courses",
     "children": [
       {
@@ -318,7 +318,7 @@
   {
     "title": "FAQs",
     "icon": "fa fa-lightbulb",
-    "colorSet": "yellow",
+    "color": "yellow",
     "path": "/faqs"
   }
 ]
