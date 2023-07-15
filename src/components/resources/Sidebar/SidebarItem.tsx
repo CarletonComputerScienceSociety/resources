@@ -10,7 +10,7 @@ interface RecursiveSidebarItemProps extends SidebarItemProps {
 export default function SidebarItem(props: SidebarItemProps) {
   const [open, setOpen] = useState<boolean>(false);
 
-  const checkActivePath = (item: SidebarItem) => {
+  const checkActivePath = (item: RecursiveSidebarItemProps) => {
     if (props.item.path && window.location.pathname.includes(props.item.path)) {
       setOpen(true);
     } else if (item.children) {
@@ -57,14 +57,14 @@ export default function SidebarItem(props: SidebarItemProps) {
           {/* if you have children, display a dropdown arrow */}
           {props.item.children ? (
             <button className="menu-down" onClick={() => setOpen(!open)}>
-              <i className={`fa fa-chevron-${open ? "up" : "down"}`} />               
+              <i className={`fa fa-chevron-${open ? "up" : "down"}`} />
             </button>
           ) : null}
         </div>
       </div>
 
       {/* if you have children, display children */}
-      {props.item.children && (
+      {props.item.children ? (
         <div className={`sidebar-content ${open ? "open" : null}`}>
           {props.item.children.map((child, index) => (
             <SidebarItem
@@ -75,7 +75,7 @@ export default function SidebarItem(props: SidebarItemProps) {
             />
           ))}
         </div>
-      )}
+      ): null}
     </>
   );
 }
