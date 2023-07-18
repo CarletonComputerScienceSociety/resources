@@ -1,7 +1,6 @@
 import Fuse from "fuse.js";
 import { ChangeEvent, useState } from "react";
 import type { SearchProps, SearchResult } from "./Search.model";
-import React from "react";
 import "./Search.style.scss";
 
 function Search(props: SearchProps) {
