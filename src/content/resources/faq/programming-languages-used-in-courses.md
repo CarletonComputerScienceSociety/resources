@@ -10,7 +10,7 @@ tags:
 sources:
   - name: Carleton Univeristy Undergraduate Calendar - Computer Science Courses
     link: https://calendar.carleton.ca/undergrad/courses/COMP/
-  
+
   - name: School of Computer Science - Course Outlines
     link: https://service.scs.carleton.ca/cu-course-outline
 ---
@@ -19,7 +19,7 @@ sources:
 
 --
 
-Teaching programming languages is never the primary focus of a course, they are only used as tools to achieve the core learning outcomes. 
+Teaching programming languages is never the primary focus of a course, they are only used as tools to achieve the core learning outcomes.
 
 While instructors may choose to use any language that is most suitable for their version of a course, here are the programming languages most commonly used for first and second year computer science courses: <br>
 COMP 1405 - Python or Java<br>
@@ -29,4 +29,4 @@ COMP 2402 - Java<br>
 COMP 2404 - C++<br>
 COMP 2406 - Web technologies like HTML/CSS/JavaScript etc.<br>
 
-The language used in a specific section of a course will be mentioned in the [course description](https://calendar.carleton.ca/undergrad/courses/COMP/) (2) or [course outline](https://service.scs.carleton.ca/cu-course-outline) (1). 
+The language used in a specific section of a course will be mentioned in the [course description](https://calendar.carleton.ca/undergrad/courses/COMP/) (2) or [course outline](https://service.scs.carleton.ca/cu-course-outline) (1).

@@ -19,5 +19,5 @@ sources:
 
 --
 
-It is mandatory to register for one tutorial section along with the lecture section of a course. 
+It is mandatory to register for one tutorial section along with the lecture section of a course.
 Whether or not attendance is required for the tutorials will be mentioned in the [course outline](https://service.scs.carleton.ca/cu-course-outline) (which is released by the first lecture of the course) (1), or communicated by the instructor.

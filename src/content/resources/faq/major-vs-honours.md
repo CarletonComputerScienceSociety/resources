@@ -15,7 +15,8 @@ sources:
 
 --
 
-Both the computer science major and honours degrees are 20.0 credit degrees, however the honours degree has the following requirements in addition to the major degree's requirements: 
+Both the computer science major and honours degrees are 20.0 credit degrees, however the honours degree has the following requirements in addition to the major degree's requirements:
+
 - COMP 3804 - Design and Analysis of Algorithms I
 - Optionally, an honours project or honours thesis.
 

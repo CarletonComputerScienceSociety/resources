@@ -16,6 +16,6 @@ sources:
 
 --
 
-The recommended textbook for a course will be listed in its [course outline](https://service.scs.carleton.ca/cu-course-outline), which is usually released by the first lecture of the course. However, the textbook may not be required and might only be listed as an additional reference for the course content. 
+The recommended textbook for a course will be listed in its [course outline](https://service.scs.carleton.ca/cu-course-outline), which is usually released by the first lecture of the course. However, the textbook may not be required and might only be listed as an additional reference for the course content.
 
 You should wait until classes begin, and only purchase a textbook if your instructor tells you that it is required for the course.

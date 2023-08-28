@@ -19,6 +19,6 @@ sources:
 --
 
 Registration for both the fall and winter semesters opens at the same time. It is strongly recommended that you register for your courses for both semesters as soon as possible after registration opens to maximize your chances of getting your ideal schedule.<br>
-Waiting to register increases the chances of course sections filling up. 
+Waiting to register increases the chances of course sections filling up.
 
-Note that you have the option of making registration changes until a week or two after the beginning of a semester (the exact deadline is posted in the [academic calendar](https://calendar.carleton.ca/academicyear/)). 
+Note that you have the option of making registration changes until a week or two after the beginning of a semester (the exact deadline is posted in the [academic calendar](https://calendar.carleton.ca/academicyear/)).

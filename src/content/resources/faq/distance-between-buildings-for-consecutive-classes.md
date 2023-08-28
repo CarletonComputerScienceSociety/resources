@@ -18,6 +18,6 @@ sources:
 --
 
 There is a 10 minute gap between any two consecutive classes, which is long enough to get from one classroom to the next, regardless of their locations.
-You should identify the locations and familiarize yourself with the ideal route for each of your classes before the beginning of the semester. 
+You should identify the locations and familiarize yourself with the ideal route for each of your classes before the beginning of the semester.
 
 You can also use the [campus map](https://carleton.ca/campus/map/) (1) to find a route between two buildings.

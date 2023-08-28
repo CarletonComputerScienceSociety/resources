@@ -9,7 +9,6 @@ tags:
   - streams
 
 sources:
-  
 ---
 
 The stream that you register in will not show on your degree, but it will be mentioned on your transcript.
