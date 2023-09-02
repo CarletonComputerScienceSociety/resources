@@ -8,6 +8,8 @@
   justify-content: space-between;
   font-size: 1.1rem;
   border: 1px solid rgb(205, 205, 205);
+  align-items: center;
+  gap: 8px;
 
   @media (max-width: 525px) {
     width: 100%;
@@ -37,10 +39,92 @@
 }
 
 .header-search-results {
-  position: fixed;
+  position: absolute;
+  width: 25rem;
+  border: 1px solid rgb(205, 205, 205);
+  border-radius: 4px;
+  margin-top: 12px;
+  padding: 1rem 1rem 1rem 0.5rem;
+  background: white;
 
-  ul {
+  &__link-container {
     display: flex;
     flex-direction: column;
+    gap: 4px;
   }
+
+  &__text {
+    font-size: 12px;
+    padding-left: 8px;
+    margin-bottom: 8px;
+  }
+
+  &__link {
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+
+    &__title {
+      max-width: 20em;
+      font-size: 16px;
+      color: black;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    &__cta {
+      color: #a7a9b8;
+      font-size: 12px;
+      display: none;
+    }
+
+    &:hover {
+      background-color: #f9fbfc;
+      border-radius: 4px;
+    }
+
+    &:hover &__cta {
+      background-color: #f9fbfc;
+      border-radius: 4px;
+      display: block;
+    }
+  }
+
+  &__no-result {
+    // TODO: Fix CSS hierarchy
+    font-size: 16px !important;
+    color: black !important;
+    padding: 8px;
+    font-weight: 600;
+    margin: 0;
+  }
+}
+
+.header-search-results:after,
+.header-search-results:before {
+  bottom: 100%;
+  left: 5%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.header-search-results:after {
+  border-color: rgba(238, 238, 238, 0);
+  border-bottom-color: white;
+  border-width: 9px;
+  margin-left: -15px;
+}
+
+.header-search-results:before {
+  border-color: rgba(204, 204, 204, 0);
+  border-bottom-color: rgb(205, 205, 205);
+  border-width: 10px;
+  margin-left: -16px;
 }
