@@ -3,7 +3,7 @@ layout: ../../../layouts/Faq.astro
 title: What is COMP1405/1406 Z Section and can I handle it?
 short_answer: COMP1405/1406 Z Section is 2 courses squished into 1 term. COMP1405Z in first half and COMP1406 in second half of the term. If you've done CS in grade 11 or 12, it's an easy 90%
 date: 2023-09-02T00:00:00.000Z
-draft: false
+draft: true
 slug: faq/z-section
 tags:
   - courses
@@ -11,7 +11,7 @@ sources:
   - name: 2022 Fall COMP1405/1406Z Student
 ---
 
-**TDLR**: COMP1405/1406 Z Section is 2 courses squished into 1 term. COMP1405Z in first half and COMP1406 in second half of the term. If you've done CS in grade 11 or 12, it's an easy 90%
+**TLDR**: COMP1405/1406 Z Section is 2 courses squished into 1 term. COMP1405Z in first half and COMP1406 in second half of the term. If you've done CS in grade 11 or 12, it's an easy 90%
 
 --
 

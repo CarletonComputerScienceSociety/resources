@@ -24,7 +24,7 @@
   }
 
   a {
-    color: var(--color-primary);
+    color: #0000ee;
     text-decoration: none;
   }
 
@@ -38,6 +38,11 @@
     font-weight: bold;
     align-items: center;
     margin-bottom: 4rem;
+
+    a {
+      color: var(--color-primary);
+      text-decoration: none;
+    }
   }
 
   &__body {

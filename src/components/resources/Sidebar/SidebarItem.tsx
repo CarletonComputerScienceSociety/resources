@@ -3,10 +3,14 @@ import { useState, useEffect } from "react";
 import { CircleIcon } from "../../core";
 import type { SidebarItem, SidebarItemProps } from "./Sidebar.model";
 
+interface RecursiveSidebarItemProps extends SidebarItemProps {
+  children?: RecursiveSidebarItemProps[];
+}
+
 export default function SidebarItem(props: SidebarItemProps) {
   const [open, setOpen] = useState<boolean>(false);
 
-  const checkActivePath = (item: SidebarItem) => {
+  const checkActivePath = (item: RecursiveSidebarItemProps) => {
     if (props.item.path && window.location.pathname.includes(props.item.path)) {
       setOpen(true);
     } else if (item.children) {
