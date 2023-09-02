@@ -1,6 +1,6 @@
 ---
 layout: ../../../layouts/Faq.astro
-title: Can I drop a course after registering for it?
+title: Can I Drop a Course After Registering for It?
 short_answer: You can drop a course after registering for it until the deadline posted in the academic calendar.
 date: 2023-09-02T00:00:00.000Z
 draft: false

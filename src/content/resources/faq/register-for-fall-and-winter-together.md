@@ -1,6 +1,6 @@
 ---
 layout: ../../../layouts/Faq.astro
-title: Do I need to register for both the fall and winter semesters at the same time?
+title: Do I Need To Register for Both the Fall and Winter Semesters at the Same Time?
 short_answer: It is strongly recommended that you register for your courses for both semesters as soon as possible after registration opens to maximize your chances of getting your ideal schedule.
 date: 2023-09-02T00:00:00.000Z
 draft: false

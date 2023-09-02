@@ -1,6 +1,6 @@
 ---
 layout: ../../../layouts/Faq.astro
-title: Do tutorial and lecture sections need to be the same?
+title: Do Tutorial and Lecture Sections Need To Be the Same?
 short_answer: You must register in the same section of a lecture and tutorial for a course.
 date: 2023-09-02T00:00:00.000Z
 draft: false

@@ -1,6 +1,6 @@
 ---
 layout: ../../../layouts/Faq.astro
-title: Should I be worried about the distance between two buildings for consecutive classes?
+title: Should I Be Worried About the Distance Between Two Buildings for Consecutive Classes?
 short_answer: There is a 10 minute gap between any two consecutive classes, which is long enough to get from one classroom to the next, regardless of their locations.
 date: 2023-09-02T00:00:00.000Z
 draft: false

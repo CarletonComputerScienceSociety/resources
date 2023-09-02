@@ -1,6 +1,6 @@
 ---
 layout: ../../../layouts/Faq.astro
-title: When should I take COOP 1000?
+title: When Should I Take COOP 1000?
 short_answer: COOP 1000 is generally taken in the fall term of your second year, two semesters before your first co op work term.
 date: 2023-09-02T00:00:00.000Z
 draft: false

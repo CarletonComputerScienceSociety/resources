@@ -1,6 +1,6 @@
 ---
 layout: ../../../layouts/Faq.astro
-title: What is the difference between the computer science major and honours degrees?
+title: What Is the Difference Between the Computer Science Major and Honours Degrees?
 short_answer: An honours degree is recommended if you plan on getting a masters degree in the future.
 date: 2023-09-02T00:00:00.000Z
 draft: false

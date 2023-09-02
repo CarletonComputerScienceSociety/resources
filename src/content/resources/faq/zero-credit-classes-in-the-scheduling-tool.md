@@ -1,6 +1,6 @@
 ---
 layout: ../../../layouts/Faq.astro
-title: Why are some classes worth 0 credits in the scheduling tool?
+title: Why Are Some Classes Worth 0 Credits in the Scheduling Tool?
 short_answer: Classes that are worth 0 credits are generally the tutorial sections of a course.
 date: 2023-09-02T00:00:00.000Z
 draft: false

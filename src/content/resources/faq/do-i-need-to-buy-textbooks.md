@@ -1,6 +1,6 @@
 ---
 layout: ../../../layouts/Faq.astro
-title: Do I need to buy textbooks for my courses?
+title: Do I Need To Buy Textbooks for My Courses?
 short_answer: You should wait until classes begin, and only purchase a textbook if your instructor tells you that it is required for the course.
 date: 2023-09-02T00:00:00.000Z
 draft: false

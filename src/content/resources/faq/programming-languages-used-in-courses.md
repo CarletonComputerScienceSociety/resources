@@ -1,6 +1,6 @@
 ---
 layout: ../../../layouts/Faq.astro
-title: Which programming languages are used in computer science courses?
+title: Which Programming Languages Are Used in Computer Science Courses?
 short_answer: Instructors can choose to use any language that is most suitable for their version of a course. You can refer to past course outlines to find which programming language was used for a course in the past.
 date: 2023-09-02T00:00:00.000Z
 draft: false

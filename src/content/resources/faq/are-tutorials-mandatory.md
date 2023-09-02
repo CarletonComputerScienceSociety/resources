@@ -1,6 +1,6 @@
 ---
 layout: ../../../layouts/Faq.astro
-title: Are tutorials mandatory?
+title: Are Tutorials Mandatory?
 short_answer: It is manadatory to register for a tutorial. The attendance requirement for a tutorial varies between courses.
 date: 2023-09-02T00:00:00.000Z
 draft: false

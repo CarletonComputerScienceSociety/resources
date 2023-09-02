@@ -1,6 +1,6 @@
 ---
 layout: ../../../layouts/Faq.astro
-title: Why does a course section not have a listed instructor?
+title: Why Does a Course Section Not Have a Listed Instructor?
 short_answer: Some course sections may not have a listed instructor until assignments are finalized, but will be updated before the beginning of the semester.
 date: 2023-09-02T00:00:00.000Z
 draft: false

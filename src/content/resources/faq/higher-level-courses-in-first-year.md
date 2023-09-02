@@ -1,6 +1,6 @@
 ---
 layout: ../../../layouts/Faq.astro
-title: Can I take 2000 level courses in my first year?
+title: Can I Take 2000 Level Courses in My First Year?
 short_answer: There is no general restriction on taking a higher level course as a first year student. If you successfully complete the prerequisite courses and there is no year standing requirement, you should be eligible to register for the course.
 date: 2023-09-02T00:00:00.000Z
 draft: false
