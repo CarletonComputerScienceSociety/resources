@@ -1,2 +1,2 @@
-export { EventSchema } from "./event";
 export { ResourceSchema } from "./resource";
+export { TopicSchema } from "./topic";

@@ -1,0 +1,54 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../layouts/Base.astro";
+import { ContentType, getContentType } from "../utils";
+
+export async function getStaticPaths() {
+  const allPosts = await Astro.glob("../**/*.md");
+
+  return [
+    { params: { tag: "student-life" }, props: { posts: allPosts } },
+    { params: { tag: "academics" }, props: { posts: allPosts } },
+    { params: { tag: "careers" }, props: { posts: allPosts } },
+    { params: { tag: "self-learning" }, props: { posts: allPosts } },
+    { params: { tag: "courses" }, props: { posts: allPosts } },
+    { params: { tag: "faqs" }, props: { posts: allPosts } },
+  ];
+}
+const topics = await getCollection("topics");
+const { tag } = Astro.params;
+const { frontmatter, posts } = Astro.props;
+const filteredPosts = posts.filter((post: any) =>
+  post?.frontmatter?.tags?.includes(tag)
+);
+
+const topic = topics.find((topic) => topic.data.tag === tag);
+
+const faqs = filteredPosts.filter(
+  (post: any) => getContentType(post?.frontmatter?.layout) === ContentType.FAQ
+);
+const articles = filteredPosts.filter(
+  (post: any) =>
+    getContentType(post?.frontmatter?.layout) === ContentType.ARTICLE
+);
+
+const metadata = {
+  title: frontmatter?.title,
+  description: frontmatter?.short_answer,
+  url: "",
+  image: "/",
+};
+---
+
+<Base {metadata}>
+  <p>Posts tagged with {tag}</p>
+  <ul>
+    {
+      articles.map((post: any) => (
+        <li>
+          <a href={post.url}>{post.frontmatter.title}</a>
+        </li>
+      ))
+    }
+  </ul>
+</Base>

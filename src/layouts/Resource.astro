@@ -26,11 +26,6 @@ const formattedPublishDate = new Date(frontmatter.date).toLocaleDateString(
   dateOptions
 );
 
-const formattedSlug = frontmatter.slug
-  .replace(/-/g, " ")
-  .replace(/\b\w/g, (l) => l.toUpperCase())
-  .replace(/\//g, " > ");
-
 // TODO: move to a config file
 
 const iconMap = {
@@ -64,9 +59,6 @@ const colorSet = colorSetMap[frontmatter.slug.split("/")[0]];
         <div>
           <CircleIcon icon={icon} colorSet={colorSet} size="size-normal" />
         </div>
-        <!-- <div class="resources-layout__slug">
-          {formattedSlug}
-        </div> -->
       </div>
       <h1 class="resources-layout__title">{frontmatter.title}</h1>
       <p class="resources-layout__updated">
