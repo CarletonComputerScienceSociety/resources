@@ -1,0 +1,18 @@
+.navbar {
+  max-width: 75rem;
+  padding-left: calc(5% + 9px);
+  padding-right: calc(5% + 9px);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  &__items {
+    display: flex;
+    gap: 3rem;
+  }
+}

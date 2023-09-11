@@ -10,6 +10,8 @@ tags:
   - carleton-central
   - streams
   - school-of-computer-science
+  - faqs
+topic: faq
 sources:
   - name: Academic Advising - Adding or Dropping Minors/Concentration
     link: https://carleton.ca/academicadvising/adding-or-dropping-minorsconcentration/#:~:text=If%20you%20would%20like%20to,(COPE)%20in%20Carleton%20Central.&text=Under%20'Student%20Online%20Applications'%20you,'%20Click%20on%20that%20link.

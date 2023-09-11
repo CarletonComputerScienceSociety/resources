@@ -1,4 +1,7 @@
-.resources-page {
+.home-page {
+  min-height: 100vh;
+  width: 100%;
+
   &__container {
     display: flex;
   }
@@ -28,8 +31,6 @@
 
   &__cards {
     margin: auto;
-    // margin-top: 4rem;
-    // width: 1300px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

@@ -1,9 +1,10 @@
 ---
-layout: ../../../../layouts/Resource.astro
+layout: ../../../layouts/Resource.astro
 title: Dean's Summer Research Internships
 date: 2023-07-11T00:00:00.000Z
 draft: false
-slug: careers/carleton-opportunities/dsri
+slug: articles/dsri
+topic: careers
 sources:
   - name: Faculty of Science - Dean's Summer Research Internships
     link: https://science.carleton.ca/students/undergraduate-resources/deans-summer-research-internships/

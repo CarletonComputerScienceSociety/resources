@@ -9,6 +9,8 @@ tags:
   - registration
   - carleton-central
   - courses
+  - faqs
+topic: faq
 sources:
   - name: School of Computer Science - Electives and Prohibited Courses
     link: https://carleton.ca/scs/current-students/undergraduate-students/help-selecting-courses/electives-and-prohibited-courses-2/

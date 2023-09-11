@@ -10,6 +10,8 @@ tags:
   - carleton-central
   - courses
   - tutorials
+  - faqs
+topic: faq
 sources:
 ---
 

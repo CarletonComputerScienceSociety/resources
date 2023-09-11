@@ -10,6 +10,8 @@ tags:
   - carleton-central
   - courses
   - tutorials
+  - faqs
+topic: faq
 sources:
   - name: Carleton University Registration Terminology - Registering in Groups, Labs, Tutorials etc.
     link: https://carleton.ca/registrar/registration/terminology/

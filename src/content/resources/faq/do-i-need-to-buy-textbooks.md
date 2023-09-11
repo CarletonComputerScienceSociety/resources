@@ -7,6 +7,8 @@ draft: false
 slug: faq/do-i-need-to-buy-textbooks
 tags:
   - courses
+  - faqs
+topic: faq
 sources:
   - name: School of Computer Science - Course Outlines
     link: https://service.scs.carleton.ca/cu-course-outline

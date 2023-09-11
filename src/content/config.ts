@@ -1,17 +1,17 @@
 import { defineCollection } from "astro:content";
-import { EventSchema, ResourceSchema } from "../schemas";
-
-const eventsCollection = defineCollection({
-  type: "content",
-  schema: EventSchema,
-});
+import { ResourceSchema, TopicSchema } from "../schemas";
 
 const resourcesCollection = defineCollection({
   type: "content",
   schema: ResourceSchema,
 });
 
+const topicsCollection = defineCollection({
+  type: "data",
+  schema: TopicSchema,
+});
+
 export const collections = {
-  events: eventsCollection,
   resources: resourcesCollection,
+  topics: topicsCollection,
 };

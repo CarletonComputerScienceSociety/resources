@@ -9,6 +9,8 @@ tags:
   - registration
   - carleton-central
   - courses
+  - faqs
+topic: faq
 sources:
 ---
 

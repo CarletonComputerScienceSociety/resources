@@ -9,6 +9,8 @@ tags:
   - registration
   - carleton-central
   - courses
+  - faqs
+topic: faq
 sources:
   - name: Carleton University Calendars - The Academic Year
     link: https://calendar.carleton.ca/academicyear/
