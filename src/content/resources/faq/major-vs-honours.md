@@ -6,6 +6,8 @@ date: 2023-09-02T00:00:00.000Z
 draft: false
 slug: faq/major-vs-honours
 tags:
+  - faqs
+topic: faq
 sources:
   - name: School of Computer Science - Major vs. Honours
     link: https://carleton.ca/scs/current-students/undergraduate-students/streams-and-programs/major-vs-honours-2/

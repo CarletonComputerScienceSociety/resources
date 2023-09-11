@@ -9,6 +9,8 @@ tags:
   - registration
   - courses
   - co-op
+  - faqs
+topic: faq
 sources:
   - name: Carleton University - COOP 1000
     link: https://carleton.ca/co-op/coop-1000/

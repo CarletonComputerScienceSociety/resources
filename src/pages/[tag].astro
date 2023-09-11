@@ -2,6 +2,8 @@
 import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
 import { ContentType, getContentType } from "../utils";
+import { Navbar, TopicCard } from "../components/core";
+import "./index.style.scss";
 
 export async function getStaticPaths() {
   const allPosts = await Astro.glob("../**/*.md");
@@ -18,19 +20,21 @@ export async function getStaticPaths() {
 const topics = await getCollection("topics");
 const { tag } = Astro.params;
 const { frontmatter, posts } = Astro.props;
-const filteredPosts = posts.filter((post: any) =>
-  post?.frontmatter?.tags?.includes(tag)
+const filteredPosts = posts.filter(
+  (post: any) =>
+    post.frontmatter.topic === tag || post?.frontmatter?.tags?.includes(tag)
 );
-
 const topic = topics.find((topic) => topic.data.tag === tag);
 
 const faqs = filteredPosts.filter(
-  (post: any) => getContentType(post?.frontmatter?.layout) === ContentType.FAQ
+  (post: any) => getContentType(post?.frontmatter?.topic) === ContentType.FAQ
 );
 const articles = filteredPosts.filter(
   (post: any) =>
-    getContentType(post?.frontmatter?.layout) === ContentType.ARTICLE
+    getContentType(post?.frontmatter?.topic) === ContentType.ARTICLE
 );
+
+const display = articles.length > 0 ? articles : faqs;
 
 const metadata = {
   title: frontmatter?.title,
@@ -41,14 +45,25 @@ const metadata = {
 ---
 
 <Base {metadata}>
-  <p>Posts tagged with {tag}</p>
-  <ul>
-    {
-      articles.map((post: any) => (
-        <li>
-          <a href={post.url}>{post.frontmatter.title}</a>
-        </li>
-      ))
-    }
-  </ul>
+  <div class="tag-page">
+    <div style="margin-top:1.5rem"></div>
+    <Navbar />
+    <div style="margin-top:7rem"></div>
+    <div class="home-page__container">
+      <div class="home-page__cards">
+        {
+          display.map((post: any) => (
+            <a href={post.url}>
+              <TopicCard
+                title={post.frontmatter.title}
+                description={post.frontmatter.short_answer}
+                icon={"fa fa-lightbulb"}
+                colorSet={"yellow-card"}
+              />
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </div>
 </Base>

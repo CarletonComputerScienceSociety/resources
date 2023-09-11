@@ -8,6 +8,8 @@ slug: faq/distance-between-buildings-for-consecutive-classes
 tags:
   - registration
   - courses
+  - faqs
+topic: faq
 sources:
   - name: Carleton University Campus Map
     link: https://carleton.ca/campus/map/

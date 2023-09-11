@@ -7,6 +7,8 @@ draft: false
 slug: faq/programming-languages-used-in-courses
 tags:
   - courses
+  - faqs
+topic: faq
 sources:
   - name: Carleton Univeristy Undergraduate Calendar - Computer Science Courses
     link: https://calendar.carleton.ca/undergrad/courses/COMP/

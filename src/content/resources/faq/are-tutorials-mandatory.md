@@ -10,6 +10,8 @@ tags:
   - carleton-central
   - courses
   - tutorials
+  - faqs
+topic: faq
 sources:
   - name: School of Computer Science - Course Outlines
     link: https://service.scs.carleton.ca/cu-course-outline

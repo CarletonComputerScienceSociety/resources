@@ -10,6 +10,8 @@ tags:
   - carleton-central
   - courses
   - first-year
+  - faqs
+topic: faq
 sources:
   - name: Carleton University Undergraduate Calendar - Courses
     link: https://calendar.carleton.ca/undergrad/courses/

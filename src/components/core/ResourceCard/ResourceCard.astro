@@ -1,0 +1,17 @@
+---
+import { CircleIcon } from "../CircleIcon";
+import "./ResourceCard.style.scss";
+
+const { title, description, icon, colorSet } = Astro.props;
+---
+
+<div class="resource-card">
+  <div class="resource-card__content">
+    <div class="resource-card__heading">
+      <CircleIcon icon={icon} colorSet={colorSet} size="size-normal" />
+      <h3 class="resource-card__title">{title}</h3>
+    </div>
+
+    <p class="resource-card__description">{description}</p>
+  </div>
+</div>

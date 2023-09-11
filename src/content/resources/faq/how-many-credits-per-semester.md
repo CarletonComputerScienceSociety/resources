@@ -8,6 +8,8 @@ slug: faq/how-many-credits-per-semester
 tags:
   - registration
   - courses
+  - faqs
+topic: faq
 sources:
   - name: Carleton University - Eligible to Continue with Overload Privilege
     link: https://carleton.ca/registrar/ace/overload-ec/

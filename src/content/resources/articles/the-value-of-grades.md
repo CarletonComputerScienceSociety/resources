@@ -4,6 +4,7 @@ title: What is Impacted By Your Grades
 date: 2023-07-11T00:00:00.000Z
 draft: false
 slug: articles/what-is-impacted-by-your-grades
+topic: academics
 sources:
   - name: Co-operative Education - Requirements by Program
     link: https://calendar.carleton.ca/undergrad/regulations/co-operativeeducation/

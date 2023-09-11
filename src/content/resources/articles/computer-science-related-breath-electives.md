@@ -4,6 +4,7 @@ title: Computer Science Related Breadth Electives
 date: 2023-09-02T00:00:00.000Z
 draft: false
 slug: articles/computer-science-related-breadth-electives
+topic: courses
 ---
 
 The following page is a list of breadth elective suggestions for computer science students as well as the rational for how they are related.

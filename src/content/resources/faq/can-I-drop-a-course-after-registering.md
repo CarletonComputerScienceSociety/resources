@@ -9,6 +9,8 @@ tags:
   - registration
   - carleton-central
   - courses
+  - faqs
+topic: faq
 sources:
   - name: Carleton University - Financial vs Academic Withdrawal
     link: https://students.carleton.ca/2022/09/financial-vs-academic-withdrawal-2/

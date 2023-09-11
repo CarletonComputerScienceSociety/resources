@@ -1,5 +1,6 @@
 ---
 import { getCollection } from "astro:content";
+import { Orbit } from "./Orbit";
 import { Search } from "./Search";
 import "./Header.style.scss";
 const resourcePages = await getCollection("resources");
@@ -21,14 +22,16 @@ const resourcePages = await getCollection("resources");
       </div>
     </div>
     <div class="header__right">
-      <div class="header__animation">
+      <Orbit />
+      <!-- <div class="header__animation">
         <lottie-player
           src="/lottie/puzzle.json"
           background="transparent"
           speed="1"
           loop
           autoplay></lottie-player>
-      </div>
+        
+      </div> -->
       <!-- <div class="header__students">
         <div class="header__students__container__left">
           <div class="header__students__circle circle-one"></div>

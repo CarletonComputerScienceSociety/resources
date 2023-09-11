@@ -7,6 +7,8 @@ draft: true
 slug: faq/z-section
 tags:
   - courses
+  - faqs
+topic: faq
 sources:
   - name: 2022 Fall COMP1405/1406Z Student
 ---

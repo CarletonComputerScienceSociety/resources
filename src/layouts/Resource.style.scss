@@ -1,4 +1,33 @@
 .resources-layout {
+  width: 50%;
+  margin: auto;
+
+  .navbar {
+    padding: 0;
+  }
+
+  @media only screen and (max-width: 1600px) {
+    width: 60%;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    width: 70%;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    width: 80%;
+  }
+
+  @media only screen and (max-width: 800px) {
+    padding: 2rem;
+    width: 90%;
+    box-shadow: none;
+  }
+
+  @media only screen and (max-width: 400px) {
+    padding: 1rem;
+  }
+
   &__title {
     font-size: 2.7rem;
     font-weight: bold;
@@ -37,8 +66,8 @@
 .resources-layout__container {
   display: flex;
   min-height: fit-content;
-  margin-top: 4.1rem;
   color: rgb(42, 42, 42);
+  margin-top: 1rem;
 
   h1,
   h2,
@@ -53,11 +82,8 @@
 
 .resources-layout__content {
   flex: 1;
-  padding: 1rem;
   padding-top: 0rem;
   flex-direction: column;
-  margin-left: 27rem;
-  margin-right: 27rem;
   min-height: fit-content;
   font-size: 1.15rem;
   margin-bottom: 6rem;

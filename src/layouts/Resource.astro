@@ -1,9 +1,9 @@
 ---
 import Base from "../layouts/Base.astro";
-import { Navbar, Sidebar } from "../components/resources";
+import { Sidebar } from "../components/resources";
 import "./Resource.style.scss";
 import { getCollection } from "astro:content";
-import { CircleIcon } from "../components/core/CircleIcon";
+import { CircleIcon, Navbar } from "../components/core";
 
 const { frontmatter } = Astro.props;
 const metadata = {
@@ -46,52 +46,55 @@ const colorSetMap = {
   faqs: "yellow-card",
 };
 
-const icon = iconMap[frontmatter.slug.split("/")[0]];
-const colorSet = colorSetMap[frontmatter.slug.split("/")[0]];
+const icon = iconMap[frontmatter.topic];
+const colorSet = colorSetMap[frontmatter.topic];
 ---
 
 <Base {metadata}>
-  <Navbar searchList={resourcePages} />
-  <div class="resources-layout__container">
-    <!-- <Sidebar client:load /> -->
-    <div class={`resources-layout__content a-${colorSet}`}>
-      <div class="resources-layout__location">
-        <div>
-          <CircleIcon icon={icon} colorSet={colorSet} size="size-normal" />
+  <div class="resources-layout">
+    <div style="margin-top:1.5rem"></div>
+    <Navbar />
+    <div class="resources-layout__container">
+      <!-- <Sidebar client:load /> -->
+      <div class={`resources-layout__content a-${colorSet}`}>
+        <div class="resources-layout__location">
+          <div>
+            <CircleIcon icon={icon} colorSet={colorSet} size="size-normal" />
+          </div>
         </div>
-      </div>
-      <h1 class="resources-layout__title">{frontmatter.title}</h1>
-      <p class="resources-layout__updated">
-        Last Updated: {formattedPublishDate}
-      </p>
-      <slot />
-      <!-- TODO: sources component, see duplicate on FAQ Layout -->
-      <div class="resources-layout__sources">
-        {
-          frontmatter?.sources?.length > 0 ? (
-            <>
-              <p>Sources:</p>
+        <h1 class="resources-layout__title">{frontmatter.title}</h1>
+        <p class="resources-layout__updated">
+          Last Updated: {formattedPublishDate}
+        </p>
+        <slot />
+        <!-- TODO: sources component, see duplicate on FAQ Layout -->
+        <div class="resources-layout__sources">
+          {
+            frontmatter?.sources?.length > 0 ? (
               <>
-                {frontmatter?.sources.map(
-                  (
-                    source: {
-                      link: string | URL | null | undefined;
-                      name: unknown;
-                    },
-                    index: number
-                  ) => (
-                    <div>
-                      <span>
-                        <a href={source.link}>({index + 1})</a>
-                      </span>{" "}
-                      <a href={source.link}>{source.name}</a>
-                    </div>
-                  )
-                )}
+                <p>Sources:</p>
+                <>
+                  {frontmatter?.sources.map(
+                    (
+                      source: {
+                        link: string | URL | null | undefined;
+                        name: unknown;
+                      },
+                      index: number
+                    ) => (
+                      <div>
+                        <span>
+                          <a href={source.link}>({index + 1})</a>
+                        </span>{" "}
+                        <a href={source.link}>{source.name}</a>
+                      </div>
+                    )
+                  )}
+                </>
               </>
-            </>
-          ) : null
-        }
+            ) : null
+          }
+        </div>
       </div>
     </div>
   </div>

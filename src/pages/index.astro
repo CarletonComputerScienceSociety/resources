@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import { Footer, PageLogo, TopicCard } from "../components/core";
+import { Footer, Navbar, TopicCard } from "../components/core";
 import { Header } from "../components/resources";
 import { ContentType, getContentType } from "../utils";
 import Base from "../layouts/Base.astro";
@@ -13,126 +13,71 @@ const metadata = {
   image: "/",
 };
 
+const topics = await getCollection("topics");
 const resourcePages = await getCollection("resources");
 
 const faqs = resourcePages.filter(
   (post: any) => getContentType(post.id) === ContentType.FAQ
 );
-const articles = resourcePages.filter(
+let articles = resourcePages.filter(
   (post: any) => getContentType(post.id) === ContentType.ARTICLE
 );
 
-console.log(resourcePages)
+const iconMap = {
+  "student-life": "fa fa-home",
+  academics: "fa fa-graduation-cap",
+  careers: "fa fa-briefcase",
+  "self-learning": "fa fa-seedling",
+  courses: "fa fa-book",
+  faqs: "fa fa-lightbulb",
+};
+
+const colorSetMap = {
+  "student-life": "red-card",
+  academics: "green-card",
+  careers: "blue-card",
+  "self-learning": "orange-card",
+  courses: "purple-card",
+  faqs: "yellow-card",
+};
+
+articles.forEach((a) => {
+  const t = topics.find((topic) => topic.id === a.data.topic.id);
+  a.icon = t?.data.icon;
+  a.color = t?.data.color + "-card";
+});
 ---
 
 <Base {metadata}>
   <div class="home-page">
     <!-- TODO: remove this demo margin -->
     <div style="margin-top:1.5rem"></div>
-    <div class="home-page__navbar">
-      <PageLogo text="Resources" />
-      <div class="home-page__items">
-        <!-- <div>About</div> -->
-        <div>
-          <a href="https://github.com/CarletonComputerScienceSociety/resources"
-            >Contribute</a
-          >
-        </div>
-      </div>
-    </div>
+    <Navbar />
     <!-- TODO: remove this demo margin -->
-    <div style="margin-top:6rem"></div>
+    <div style="margin-top:8rem"></div>
     <Header />
     <!-- TODO: remove this demo margin -->
-    <div style="margin-top:7rem"></div>
-    <div class="home-page__container">
-      <div class="home-page__cards">
-        <a href="/student-life">
-          <TopicCard
-            title={"Student Life"}
-            description={"Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."}
-            icon={"fa fa-home"}
-            colorSet={"red-card"}
-          />
-        </a>
-        <a href="/academics">
-          <TopicCard
-            title={"Academics"}
-            description={"Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."}
-            icon={"fa fa-graduation-cap"}
-            colorSet={"green-card"}
-          />
-        </a>
-        <a href="/careers">
-          <TopicCard
-            title={"Careers"}
-            description={"Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."}
-            icon={"fa fa-briefcase"}
-            colorSet={"blue-card"}
-          />
-        </a>
-        <a href="/self-learning">
-          <TopicCard
-            title={"Self-Learning"}
-            description={"Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."}
-            icon={"fa fa-seedling"}
-            colorSet={"orange-card"}
-          />
-        </a>
-        <a href="/courses">
-          <TopicCard
-            title={"Courses"}
-            description={"Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."}
-            icon={"fa fa-book"}
-            colorSet={"purple-card"}
-          />
-        </a>
-        <a href="/faqs">
-          <TopicCard
-            title={"FAQs"}
-            description={"Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."}
-            icon={"fa fa-lightbulb"}
-            colorSet={"yellow-card"}
-          />
-        </a>
-      </div>
-    </div>
-    <div style="margin-top:7rem"></div>
-    <div class="home-page__container">
-      <div class="home-page__cards">
-          {
-            articles.map((post: any) => (
-            <a href={post.slug}>
-              <TopicCard
-                title={post.data.title}
-                description={"Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."}
-                icon={"fa fa-book"}
-                colorSet={"purple-card"}
-              />
-            </a>
-            ))
-          }
-      </div>
-    </div>
-    <div style="margin-top:7rem"></div>
+    <div style="margin-top:13rem"></div>
     <div class="home-page__container">
       <div class="home-page__cards">
         {
-          faqs.map((post: any) => (
-          <a href={post.slug}>
-            <TopicCard
-              title={post.data.title}
-              description={post.data.short_answer}
-              icon={"fa fa-lightbulb"}
-              colorSet={"yellow-card"}
-            />
-          </a>
+          articles.map((post: any) => (
+            <a href={post.slug}>
+              <TopicCard
+                title={post.data.title}
+                description={
+                  "Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."
+                }
+                icon={post.icon}
+                colorSet={post.color}
+              />
+            </a>
           ))
         }
-    </div>
+      </div>
     </div>
   </div>
 </Base>
 <!-- TODO: remove this demo margin -->
-<div style="margin-top:8rem"></div>
+<div style="margin-top:7rem"></div>
 <Footer />
