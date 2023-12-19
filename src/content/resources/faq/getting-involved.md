@@ -26,3 +26,9 @@ Simply put, you've gotta start somewhere. You need to put something on your resu
 # 📚How to Get Involved📚
 
 ## 🏢Rideau River Residence Association Floor Councillor🏢
+
+A glorified floor rep! There is literally a 50/50 chance no one runs for this position on your floor. You can apply and just tell peeps to vote for you in the worst case scenario. When I was floor rep, I just went to meetings, slept through them, and took the food they had at the end. It's literally the chillest position ever. It's only once a month meeting too.
+
+## 🏫Carleton's Recognizer Study Groups🏫
+
+You can apply to be a study group leader. You bring together a bunch of friends to study together once a week, and you're bussin. You need to fill out some scary looking paperwork but forget that because we're chillin.
