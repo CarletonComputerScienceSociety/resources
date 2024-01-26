@@ -1,6 +1,7 @@
 ---
 layout: ../../../layouts/Resource.astro
 title: Computer Science Related Breadth Electives
+description: An informative guide for computer science students at Carleton University on selecting breadth electives related to their field, including course insights and relevance to computer science concepts.
 date: 2023-09-02T00:00:00.000Z
 draft: false
 slug: articles/computer-science-related-breadth-electives
