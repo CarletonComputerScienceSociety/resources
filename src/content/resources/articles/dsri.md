@@ -1,6 +1,7 @@
 ---
 layout: ../../../layouts/Resource.astro
 title: Dean's Summer Research Internships
+description: Overview of Dean's Summer Research Internships (DSRIs) at Carleton University, including eligibility, application process, and tips for securing a DSRI with a Computer Science professor.
 date: 2023-07-11T00:00:00.000Z
 draft: false
 slug: articles/dsri

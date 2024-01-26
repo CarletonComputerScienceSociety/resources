@@ -1,6 +1,7 @@
 ---
 layout: ../../../layouts/Resource.astro
 title: What is Impacted By Your Grades
+description: A guide on how grades at Carleton University affect scholarships, course prerequisites, co-op eligibility, and graduate school applications.
 date: 2023-07-11T00:00:00.000Z
 draft: false
 slug: articles/what-is-impacted-by-your-grades
